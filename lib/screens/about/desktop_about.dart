@@ -7,9 +7,10 @@ class DesktopAbout extends StatelessWidget {
       backgroundColor: Colors.grey[900],
       body: SafeArea(
         child: Row(
-          // crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Spacer(),
+            Spacer(),
             Container(
               width: MediaQuery.of(context).size.width * 0.6,
               child: Column(
@@ -43,14 +44,15 @@ class DesktopAbout extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(
-              flex: 1,
-            ),
+            Spacer(),
+            Spacer(),
+            Spacer(),
             Image(
               image: AssetImage('assets/about.png'),
-              height: MediaQuery.of(context).size.height * 0.7,
-              width: MediaQuery.of(context).size.width * 0.4,
+              height: MediaQuery.of(context).size.height * 0.5,
+              width: MediaQuery.of(context).size.width * 0.33,
             ),
+            Spacer(),
           ],
         ),
       ),
