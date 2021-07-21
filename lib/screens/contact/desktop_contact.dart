@@ -42,7 +42,14 @@ class DesktopContact extends StatelessWidget {
                       ),
                       Text(
                         "Phone",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                      ),
+                      SizedBox(
+                        height: 7.0,
+                      ),
+                      Text(
+                        "(+91) 8587955277",
+                        style: TextStyle(color: Colors.white, fontSize: 12.0),
                       )
                     ],
                   ),
@@ -67,7 +74,14 @@ class DesktopContact extends StatelessWidget {
                       ),
                       Text(
                         "Email",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                      ),
+                      SizedBox(
+                        height: 7.0,
+                      ),
+                      Text(
+                        "rachau76@gmail.com",
+                        style: TextStyle(color: Colors.white, fontSize: 12.0),
                       )
                     ],
                   ),
@@ -92,11 +106,73 @@ class DesktopContact extends StatelessWidget {
                       ),
                       Text(
                         "Discord",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                      ),
+                      SizedBox(
+                        height: 7.0,
+                      ),
+                      Text(
+                        "Maverick Wolf#6565",
+                        style: TextStyle(color: Colors.white, fontSize: 12.0),
                       )
                     ],
                   ),
                 ),
+              ],
+            ),
+            SizedBox(
+              height: 50.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Spacer(),
+                Spacer(),
+                Spacer(),
+                Spacer(),
+                IconButton(
+                    icon: FaIcon(
+                      FontAwesomeIcons.github,
+                      size: 40.0,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+                Spacer(),
+                IconButton(
+                    icon: FaIcon(
+                      FontAwesomeIcons.linkedin,
+                      size: 40.0,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+                Spacer(),
+                IconButton(
+                    icon: FaIcon(
+                      FontAwesomeIcons.reddit,
+                      size: 40.0,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+                Spacer(),
+                IconButton(
+                    icon: FaIcon(
+                      FontAwesomeIcons.instagram,
+                      size: 40.0,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+                Spacer(),
+                IconButton(
+                    icon: FaIcon(
+                      FontAwesomeIcons.discord,
+                      size: 40.0,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {}),
+                Spacer(),
+                Spacer(),
+                Spacer(),
+                Spacer(),
               ],
             ),
           ],
