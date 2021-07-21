@@ -126,10 +126,9 @@ class DesktopContact extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Spacer(),
-                Spacer(),
-                Spacer(),
-                Spacer(),
+                Spacer(
+                  flex: 4,
+                ),
                 IconButton(
                     icon: FaIcon(
                       FontAwesomeIcons.github,
@@ -169,10 +168,9 @@ class DesktopContact extends StatelessWidget {
                       color: Colors.white,
                     ),
                     onPressed: () {}),
-                Spacer(),
-                Spacer(),
-                Spacer(),
-                Spacer(),
+                Spacer(
+                  flex: 4,
+                ),
               ],
             ),
           ],

@@ -10,46 +10,62 @@ class DesktopHome extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            Spacer(),
+            Spacer(
+              flex: 2,
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "WELCOME TO MY PORTFOLIO!!",
-                  style: TextStyle(color: Colors.white),
+                Spacer(
+                  flex: 6,
                 ),
                 Text(
+                  "WELCOME TO MY PORTFOLIO!!",
+                  style: TextStyle(color: Colors.white, fontSize: 22.0),
+                ),
+                Spacer(),
+                Text(
                   "Maverick",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.redAccent, fontSize: 40.0),
                 ),
                 Text(
                   "Wolf",
                   style: TextStyle(
-                      fontWeight: FontWeight.bold, color: Colors.white),
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 40.0),
                 ),
+                Spacer(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       "> ",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.redAccent,
                           fontWeight: FontWeight.w400,
-                          fontSize: 15.0),
+                          fontSize: 30.0),
                     ),
                     Container(
-                      width: 200.0,
+                      width: 300.0,
                       child: AnimatedTextKit(
                         animatedTexts: [
                           TypewriterAnimatedText("Flutter App Development",
-                              textStyle: TextStyle(color: Colors.white),
+                              textStyle: TextStyle(
+                                  color: Colors.white, fontSize: 22.0),
                               speed: Duration(milliseconds: 100)),
                           TypewriterAnimatedText("Flutter Web Development",
-                              textStyle: TextStyle(color: Colors.white),
+                              textStyle: TextStyle(
+                                  color: Colors.white, fontSize: 22.0),
+                              speed: Duration(milliseconds: 100)),
+                          TypewriterAnimatedText("Discord Bot Development",
+                              textStyle: TextStyle(
+                                  color: Colors.white, fontSize: 22.0),
                               speed: Duration(milliseconds: 100)),
                           TypewriterAnimatedText("Python Programming",
-                              textStyle: TextStyle(color: Colors.white),
+                              textStyle: TextStyle(
+                                  color: Colors.white, fontSize: 22.0),
                               speed: Duration(milliseconds: 100)),
                         ],
                         repeatForever: true,
@@ -57,62 +73,78 @@ class DesktopHome extends StatelessWidget {
                     ),
                   ],
                 ),
+                Spacer(
+                  flex: 2,
+                ),
                 Row(
                   children: [
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.github,
-                          size: 30.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
                         onPressed: () {}),
+                    SizedBox(
+                      width: 30.0,
+                    ),
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.linkedin,
-                          size: 30.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
                         onPressed: () {}),
+                    SizedBox(
+                      width: 30.0,
+                    ),
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.reddit,
-                          size: 30.0,
                           color: Colors.white,
+                          size: 40.0,
                         ),
                         onPressed: () {}),
+                    SizedBox(
+                      width: 30.0,
+                    ),
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.instagram,
-                          size: 30.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
                         onPressed: () {}),
+                    SizedBox(
+                      width: 30.0,
+                    ),
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.discord,
-                          size: 30.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
-                        onPressed: () {})
+                        onPressed: () {}),
                   ],
                 ),
+                Spacer(
+                  flex: 6,
+                )
               ],
             ),
-            Spacer(),
-            Spacer(),
+            Spacer(
+              flex: 3,
+            ),
             Padding(
               padding: EdgeInsets.fromLTRB(5.0, 5.0, 15.0, 30.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20.0),
-                child: Image(
-                  image: AssetImage('assets/classy.jpg'),
-                  height: MediaQuery.of(context).size.height * 0.7,
-                ),
+              child: CircleAvatar(
+                backgroundImage: AssetImage('groot.png'),
+                radius: 170.0,
               ),
             ),
-            SizedBox(
-              width: 20.0,
-            )
+            Spacer(
+              flex: 1,
+            ),
           ],
         ),
       ),
