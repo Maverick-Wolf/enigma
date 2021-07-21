@@ -20,33 +20,30 @@ class LargeScreen extends StatelessWidget {
     PageController controller = PageController(viewportFraction: 1.0);
     return Scaffold(
       appBar: AppBar(
+          backgroundColor: Colors.black,
           elevation: 0.0,
           title: Row(
             children: [
-              SizedBox(
-                width: 10.0,
-              ),
+              Spacer(),
               Text(
                 "<Maverick Wolf/>",
                 style: TextStyle(
                   fontSize: 20.0,
                 ),
               ),
-              Spacer(),
-              Spacer(),
-              Spacer(),
-              Spacer(),
-              Spacer(),
-              Spacer(),
-              Spacer(),
-              Spacer(),
+              Spacer(
+                flex: 30,
+              ),
               HoverButton(
                 onpressed: () {
                   controller.animateToPage(0,
                       duration: Duration(milliseconds: 1200),
                       curve: Curves.easeInOutSine);
                 },
-                hoverColor: Colors.black,
+                hoverColor: Colors.red[700],
+                elevation: 0.0,
+                hoverElevation: 0.0,
+                height: 45.0,
                 child: Text(
                   "HOME",
                   style: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -60,7 +57,10 @@ class LargeScreen extends StatelessWidget {
                       duration: Duration(milliseconds: 1200),
                       curve: Curves.easeInOutSine);
                 },
-                hoverColor: Colors.black,
+                hoverColor: Colors.red[700],
+                elevation: 0.0,
+                hoverElevation: 0.0,
+                height: 45.0,
                 child: Text(
                   "ABOUT",
                   style: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -73,7 +73,10 @@ class LargeScreen extends StatelessWidget {
                       duration: Duration(milliseconds: 1200),
                       curve: Curves.easeInOutSine);
                 },
-                hoverColor: Colors.black,
+                hoverColor: Colors.red[700],
+                elevation: 0.0,
+                hoverElevation: 0.0,
+                height: 45.0,
                 child: Text(
                   "SKILLS",
                   style: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -86,8 +89,11 @@ class LargeScreen extends StatelessWidget {
                       duration: Duration(milliseconds: 1200),
                       curve: Curves.easeInOutSine);
                 },
-                hoverColor: Colors.black,
-                minWidth: 120.0,
+                hoverColor: Colors.red[700],
+                elevation: 0.0,
+                hoverElevation: 0.0,
+                minWidth: 110.0,
+                height: 45.0,
                 child: Text(
                   "EDUCATION",
                   style: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -100,8 +106,11 @@ class LargeScreen extends StatelessWidget {
                       duration: Duration(milliseconds: 1200),
                       curve: Curves.easeInOutSine);
                 },
-                hoverColor: Colors.black,
+                hoverColor: Colors.red[700],
+                elevation: 0.0,
+                hoverElevation: 0.0,
                 minWidth: 100.0,
+                height: 45.0,
                 child: Text(
                   "CONTACT",
                   style: TextStyle(fontSize: 15.0, color: Colors.white),

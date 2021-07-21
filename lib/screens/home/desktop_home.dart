@@ -26,11 +26,11 @@ class DesktopHome extends StatelessWidget {
                 ),
                 Spacer(),
                 Text(
-                  "Maverick",
+                  "Rachit",
                   style: TextStyle(color: Colors.redAccent, fontSize: 40.0),
                 ),
                 Text(
-                  "Wolf",
+                  "Chaudhary",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
