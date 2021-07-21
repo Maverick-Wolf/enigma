@@ -118,7 +118,7 @@ class DesktopAbout extends StatelessWidget {
               flex: 3,
             ),
             Image(
-              image: AssetImage('assets/about.png'),
+              image: AssetImage('assets/manontable.png'),
               height: MediaQuery.of(context).size.height * 0.5,
               width: MediaQuery.of(context).size.width * 0.33,
             ),

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hovering/hovering.dart';
 
-class DesktopSkills extends StatelessWidget {
+class DesktopEducation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,32 +12,23 @@ class DesktopSkills extends StatelessWidget {
               height: 15.0,
             ),
             Text(
-              "What I Do",
+              "Education",
               style: TextStyle(color: Colors.white, fontSize: 40.0),
-            ),
-            Text(
-              "I may not be perfect, but I'm surely of some help :)",
-              style: TextStyle(color: Colors.white),
             ),
             SizedBox(
               height: 25.0,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image(
-                  image: AssetImage('assets/program.png'),
-                  height: MediaQuery.of(context).size.height * 0.7,
-                  width: MediaQuery.of(context).size.width * 0.4,
-                ),
                 Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        HoverContainer(
-                          height: MediaQuery.of(context).size.height * 0.3,
-                          width: MediaQuery.of(context).size.width * 0.2,
+                        Container(
+                          height: MediaQuery.of(context).size.height * 0.4,
+                          width: MediaQuery.of(context).size.width * 0.3,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20.0),
                             color: Colors.grey[850],
@@ -47,48 +36,29 @@ class DesktopSkills extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              FaIcon(
-                                FontAwesomeIcons.code,
-                                color: Colors.white,
-                                size: 40.0,
-                              ),
-                              SizedBox(
-                                height: 10.0,
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage('assets/college.png'),
                               ),
                               Text(
-                                "Flutter App Development",
+                                "Birla Institute of Technology and Science, Pilani",
                                 style: TextStyle(color: Colors.white),
                               ),
+                              Text(
+                                "2020-2024",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 16.0),
+                              ),
+                              Text(
+                                "Doing my undergradute studies in Electronics Engineering",
+                                style: TextStyle(
+                                    color: Colors.white70, fontSize: 16.0),
+                              )
                             ],
                           ),
                         ),
                         SizedBox(
                           width: 20.0,
-                        ),
-                        HoverContainer(
-                          height: MediaQuery.of(context).size.height * 0.3,
-                          width: MediaQuery.of(context).size.width * 0.2,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.0),
-                            color: Colors.grey[850],
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              FaIcon(
-                                FontAwesomeIcons.laptopCode,
-                                color: Colors.white,
-                                size: 40.0,
-                              ),
-                              SizedBox(
-                                height: 10.0,
-                              ),
-                              Text(
-                                "Flutter Web Development",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
                         ),
                       ],
                     ),
@@ -98,7 +68,7 @@ class DesktopSkills extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        HoverContainer(
+                        Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.width * 0.2,
                           decoration: BoxDecoration(
@@ -108,17 +78,22 @@ class DesktopSkills extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              FaIcon(
-                                FontAwesomeIcons.terminal,
-                                color: Colors.white,
-                                size: 40.0,
-                              ),
-                              SizedBox(
-                                height: 10.0,
+                              CircleAvatar(
+                                backgroundImage: AssetImage('school.png'),
                               ),
                               Text(
-                                "Discord Bot Development",
+                                "The Air Force School, Subroto Park",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "2018-2020",
                                 style: TextStyle(color: Colors.white),
+                              ),
+                              Text(
+                                "Completed my Higher Secondary(12th) Education.",
+                                style: TextStyle(color: Colors.white70),
                               ),
                             ],
                           ),
@@ -126,7 +101,7 @@ class DesktopSkills extends StatelessWidget {
                         SizedBox(
                           width: 20.0,
                         ),
-                        HoverContainer(
+                        Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.width * 0.2,
                           decoration: BoxDecoration(
@@ -136,17 +111,22 @@ class DesktopSkills extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              FaIcon(
-                                FontAwesomeIcons.codeBranch,
-                                color: Colors.white,
-                                size: 40.0,
-                              ),
-                              SizedBox(
-                                height: 10.0,
+                              CircleAvatar(
+                                backgroundImage: AssetImage('school.png'),
                               ),
                               Text(
-                                "Open Source - Githib",
+                                "The Air Force School, Subroto Park",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "2013-2018",
                                 style: TextStyle(color: Colors.white),
+                              ),
+                              Text(
+                                "Alma mater for my Secondary School Education.",
+                                style: TextStyle(color: Colors.white70),
                               ),
                             ],
                           ),
@@ -154,6 +134,11 @@ class DesktopSkills extends StatelessWidget {
                       ],
                     ),
                   ],
+                ),
+                Image(
+                  image: AssetImage('assets/skill.png'),
+                  height: MediaQuery.of(context).size.height * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
               ],
             ),

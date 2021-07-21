@@ -1,5 +1,6 @@
 import 'package:enigma/screens/about/desktop_about.dart';
 import 'package:enigma/screens/contact/desktop_contact.dart';
+import 'package:enigma/screens/education/desktop_education.dart';
 import 'package:enigma/screens/home/desktop_home.dart';
 import 'package:enigma/screens/skills/desktop_skills.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +13,7 @@ class LargeScreen extends StatelessWidget {
       SafeArea(child: DesktopHome()),
       SafeArea(child: DesktopAbout()),
       SafeArea(child: DesktopSkills()),
-      Container(
-        color: Colors.amber,
-      ),
+      SafeArea(child: DesktopEducation()),
       SafeArea(child: DesktopContact()),
     ];
     PageController controller = PageController(viewportFraction: 1.0);
