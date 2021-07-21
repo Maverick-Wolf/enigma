@@ -1,5 +1,6 @@
 import 'package:enigma/screens/about/desktop_about.dart';
 import 'package:enigma/screens/home/desktop_home.dart';
+import 'package:enigma/screens/skills/desktop_skills.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 
@@ -9,9 +10,7 @@ class LargeScreen extends StatelessWidget {
     List<Widget> _list = [
       SafeArea(child: DesktopHome()),
       SafeArea(child: DesktopAbout()),
-      Container(
-        color: Colors.blue,
-      ),
+      SafeArea(child: DesktopSkills()),
       Container(
         color: Colors.amber,
       ),
