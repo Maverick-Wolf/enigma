@@ -1,3 +1,4 @@
+import 'package:enigma/screens/about/desktop_about.dart';
 import 'package:enigma/screens/home/desktop_home.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
@@ -5,7 +6,19 @@ import 'package:hovering/hovering.dart';
 class LargeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    List<Widget> _list = [SafeArea(child: DesktopHome()), Container(color: Colors.black,), Container(color: Colors.blue,), Container(color: Colors.amber,), Container(color: Colors.green,)];
+    List<Widget> _list = [
+      SafeArea(child: DesktopHome()),
+      SafeArea(child: DesktopAbout()),
+      Container(
+        color: Colors.blue,
+      ),
+      Container(
+        color: Colors.amber,
+      ),
+      Container(
+        color: Colors.green,
+      )
+    ];
     PageController controller = PageController(viewportFraction: 1.0);
     return Scaffold(
       appBar: AppBar(
@@ -76,9 +89,9 @@ class LargeScreen extends StatelessWidget {
                       curve: Curves.easeInOutSine);
                 },
                 hoverColor: Colors.black,
-                minWidth: 100.0,
+                minWidth: 120.0,
                 child: Text(
-                  "PROJECTS",
+                  "EDUCATION",
                   style: TextStyle(fontSize: 15.0, color: Colors.white),
                 ),
               ),

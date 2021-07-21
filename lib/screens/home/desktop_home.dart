@@ -106,7 +106,7 @@ class DesktopHome extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.0),
                 child: Image(
                   image: AssetImage('assets/classy.jpg'),
-                  height: MediaQuery.of(context).size.height * 0.6,
+                  height: MediaQuery.of(context).size.height * 0.7,
                 ),
               ),
             ),
