@@ -26,16 +26,8 @@ class DesktopSkills extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.35,
                   width: MediaQuery.of(context).size.width * 0.25,
                   decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
                     color: Colors.grey[850],
-                  ),
-                  hoverDecoration: BoxDecoration(
-                    color: Colors.grey[850],
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(10.0, 10.0),
-                          blurRadius: 10.0)
-                    ],
                   ),
                 ),
                 SizedBox(
@@ -44,7 +36,10 @@ class DesktopSkills extends StatelessWidget {
                 HoverContainer(
                   height: MediaQuery.of(context).size.height * 0.35,
                   width: MediaQuery.of(context).size.width * 0.25,
-                  color: Colors.grey[850],
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.grey[850],
+                  ),
                 ),
               ],
             ),
@@ -54,7 +49,10 @@ class DesktopSkills extends StatelessWidget {
                 HoverContainer(
                   height: MediaQuery.of(context).size.height * 0.35,
                   width: MediaQuery.of(context).size.width * 0.25,
-                  color: Colors.grey[850],
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.grey[850],
+                  ),
                 ),
                 SizedBox(
                   width: 15.0,
@@ -62,7 +60,10 @@ class DesktopSkills extends StatelessWidget {
                 HoverContainer(
                   height: MediaQuery.of(context).size.height * 0.35,
                   width: MediaQuery.of(context).size.width * 0.25,
-                  color: Colors.grey[850],
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.grey[850],
+                  ),
                 ),
               ],
             ),
