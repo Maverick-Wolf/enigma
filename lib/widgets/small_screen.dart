@@ -9,7 +9,7 @@ class _SmallScreenState extends State<SmallScreen> {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
-    PageController controller = PageController();
+    PageController controller = PageController(viewportFraction: 1.0);
     return Scaffold(
       endDrawer: Drawer(),
       key: scaffoldKey,
@@ -32,11 +32,11 @@ class _SmallScreenState extends State<SmallScreen> {
           itemCount: 5,
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(5.0),
               child: Container(
                 color: Colors.black,
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
+                // height: MediaQuery.of(context).size.height,
+                // width: MediaQuery.of(context).size.width,
                 child: Text(
                   "This is Page Number ${index + 1}",
                   style: TextStyle(

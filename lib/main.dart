@@ -1,4 +1,5 @@
 import 'package:enigma/layout.dart';
+import 'package:enigma/screens/home/desktop_home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SiteLayout(),      
+      home: SiteLayout(),
     );
   }
 }
-
-
