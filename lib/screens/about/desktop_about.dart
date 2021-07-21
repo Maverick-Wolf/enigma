@@ -49,9 +49,18 @@ class DesktopAbout extends StatelessWidget {
                   ),
                   Spacer(),
                   Text(
-                    "I have been developing Android Apps for just over 6 months now and all of these apps have majorly been in Flutter. This portfolio website is my first time playing around with flutter web.I am also the Creator and Co-Founder of a Discord bot called Emote Handler which currenlty is in over 1000 servers and has a userbase of over 400k+ users",
+                    "I have been developing Android Apps for just over 6 months now and all of these apps have majorly been in Flutter. This portfolio website is my first time playing around with flutter web.",
                     style: TextStyle(
                         color: Colors.white70,
+                        fontSize: 17.0,
+                        letterSpacing: 1.1),
+                  ),
+                  Spacer(),
+                  Text(
+                    "I am also the Creator and Co-Founder of a Discord bot called Emote Handler which currenlty is in over 1000 servers and has a userbase of over 400k+ users.",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
                         fontSize: 17.0,
                         letterSpacing: 1.1),
                   ),
