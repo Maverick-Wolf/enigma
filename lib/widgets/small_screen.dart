@@ -1,5 +1,6 @@
 import 'package:enigma/screens/about/mobile_about.dart';
 import 'package:enigma/screens/home/mobile_home.dart';
+import 'package:enigma/screens/skills/mobile_skills.dart';
 import 'package:flutter/material.dart';
 
 class SmallScreen extends StatefulWidget {
@@ -16,9 +17,8 @@ class _SmallScreenState extends State<SmallScreen> {
       ),
       SafeArea(child: MobileAbout()),
       SafeArea(
-          child: Container(
-        color: Colors.black,
-      )),
+        child: MobileSkills(),
+      ),
       SafeArea(
           child: Container(
         color: Colors.grey[900],
@@ -28,7 +28,7 @@ class _SmallScreenState extends State<SmallScreen> {
         color: Colors.black,
       )),
     ];
-    PageController controller = PageController(viewportFraction: 1.2);
+    PageController controller = PageController(viewportFraction: 1.1);
     return Scaffold(
       endDrawer: Drawer(),
       appBar: AppBar(
