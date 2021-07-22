@@ -1,4 +1,5 @@
 import 'package:enigma/screens/about/mobile_about.dart';
+import 'package:enigma/screens/education/mobile_education.dart';
 import 'package:enigma/screens/home/mobile_home.dart';
 import 'package:enigma/screens/skills/mobile_skills.dart';
 import 'package:flutter/material.dart';
@@ -19,10 +20,7 @@ class _SmallScreenState extends State<SmallScreen> {
       SafeArea(
         child: MobileSkills(),
       ),
-      SafeArea(
-          child: Container(
-        color: Colors.grey[900],
-      )),
+      SafeArea(child: MobileEducation()),
       SafeArea(
           child: Container(
         color: Colors.black,
