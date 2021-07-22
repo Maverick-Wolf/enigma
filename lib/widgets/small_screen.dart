@@ -1,4 +1,5 @@
 import 'package:enigma/screens/about/mobile_about.dart';
+import 'package:enigma/screens/contact/mobile_contact.dart';
 import 'package:enigma/screens/education/mobile_education.dart';
 import 'package:enigma/screens/home/mobile_home.dart';
 import 'package:enigma/screens/skills/mobile_skills.dart';
@@ -21,10 +22,7 @@ class _SmallScreenState extends State<SmallScreen> {
         child: MobileSkills(),
       ),
       SafeArea(child: MobileEducation()),
-      SafeArea(
-          child: Container(
-        color: Colors.black,
-      )),
+      SafeArea(child: MobileContact()),
     ];
     PageController controller = PageController(viewportFraction: 1.1);
     return Scaffold(

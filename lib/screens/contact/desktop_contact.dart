@@ -36,6 +36,38 @@ class DesktopContact extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
+                        Icons.home,
+                        size: 50.0,
+                        color: Colors.redAccent,
+                      ),
+                      Text(
+                        "Location",
+                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                      ),
+                      SizedBox(
+                        height: 7.0,
+                      ),
+                      Text(
+                        "Delhi, India",
+                        style: TextStyle(color: Colors.white, fontSize: 12.0),
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  width: 15.0,
+                ),
+                HoverContainer(
+                  height: MediaQuery.of(context).size.height * 0.27,
+                  width: MediaQuery.of(context).size.width * 0.2,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.grey[850],
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
                         Icons.phone,
                         size: 50.0,
                         color: Colors.redAccent,

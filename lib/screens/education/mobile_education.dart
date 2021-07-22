@@ -186,6 +186,5 @@ class _MobileEducationState extends State<MobileEducation> {
         ),
       ),
     );
-    ;
   }
 }
