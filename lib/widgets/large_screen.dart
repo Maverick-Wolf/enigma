@@ -118,11 +118,17 @@ class LargeScreen extends StatelessWidget {
               Spacer(),
             ],
           )),
-      body: PageView(
-        scrollDirection: Axis.vertical,
-        pageSnapping: false,
+      body: RawScrollbar(
         controller: controller,
-        children: _list,
+        thumbColor: Colors.white70,
+        thickness: 10.0,
+        radius: Radius.circular(20.0),
+        child: PageView(
+          scrollDirection: Axis.vertical,
+          pageSnapping: false,
+          controller: controller,
+          children: _list,
+        ),
       ),
     );
   }
