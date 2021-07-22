@@ -26,7 +26,97 @@ class _SmallScreenState extends State<SmallScreen> {
     ];
     PageController controller = PageController(viewportFraction: 1.1);
     return Scaffold(
-      endDrawer: Drawer(),
+      endDrawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+                child: Image(
+              image: AssetImage('assets/drawer.jpg'),
+            )),
+            ListTile(
+              title: Text(
+                "HOME",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.home,
+                color: Colors.redAccent,
+              ),
+              onTap: () {
+                controller.animateToPage(0,
+                    duration: Duration(milliseconds: 1200),
+                    curve: Curves.easeInOutSine);
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text(
+                "ABOUT",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.person,
+                color: Colors.redAccent,
+              ),
+              onTap: () {
+                controller.animateToPage(1,
+                    duration: Duration(milliseconds: 1200),
+                    curve: Curves.easeInOutSine);
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text(
+                "SKILLS",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.palette,
+                color: Colors.redAccent,
+              ),
+              onTap: () {
+                controller.animateToPage(2,
+                    duration: Duration(milliseconds: 1200),
+                    curve: Curves.easeInOutSine);
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text(
+                "EDUCATION",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.school,
+                color: Colors.redAccent,
+              ),
+              onTap: () {
+                controller.animateToPage(3,
+                    duration: Duration(milliseconds: 1200),
+                    curve: Curves.easeInOutSine);
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text(
+                "CONTACT",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.phone,
+                color: Colors.redAccent,
+              ),
+              onTap: () {
+                controller.animateToPage(4,
+                    duration: Duration(milliseconds: 1200),
+                    curve: Curves.easeInOutSine);
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0.0,
