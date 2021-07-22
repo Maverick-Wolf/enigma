@@ -31,9 +31,16 @@ class _SmallScreenState extends State<SmallScreen> {
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-                child: Image(
-              image: AssetImage('assets/drawer.jpg'),
-            )),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  image: DecorationImage(
+                    image: AssetImage('assets/drawer.png'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ),
             ListTile(
               title: Text(
                 "HOME",
