@@ -170,6 +170,11 @@ class _MobileSkillsState extends State<MobileSkills> {
                   controller: _controller,
                   children: _list,
                   scrollDirection: Axis.horizontal,
+                  onPageChanged: (page) {
+                    setState(() {
+                      _currentPage = page;
+                    });
+                  },
                 ),
               ),
             ),

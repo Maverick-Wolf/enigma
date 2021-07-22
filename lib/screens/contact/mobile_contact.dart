@@ -165,13 +165,25 @@ class _MobileContactState extends State<MobileContact> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            Spacer(
+              flex: 5,
+            ),
             Center(
               child: Text(
                 "Contact",
-                style: TextStyle(color: Colors.white, fontSize: 33.0),
+                style: TextStyle(color: Colors.white, fontSize: 37.0),
               ),
+            ),
+            Center(
+              child: Text(
+                "Lets get in touch and build something together :)",
+                style: TextStyle(fontSize: 13.0, color: Colors.white),
+              ),
+            ),
+            Spacer(
+              flex: 3,
             ),
             Center(
               child: Container(
@@ -181,8 +193,16 @@ class _MobileContactState extends State<MobileContact> {
                   controller: _controller,
                   children: _list,
                   scrollDirection: Axis.horizontal,
+                  onPageChanged: (page) {
+                    setState(() {
+                      _currentPage = page;
+                    });
+                  },
                 ),
               ),
+            ),
+            Spacer(
+              flex: 3,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -234,6 +254,9 @@ class _MobileContactState extends State<MobileContact> {
                 ),
               ],
             ),
+            Spacer(
+              flex: 5,
+            )
           ],
         ),
       ),

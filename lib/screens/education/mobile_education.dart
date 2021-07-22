@@ -174,6 +174,11 @@ class _MobileEducationState extends State<MobileEducation> {
                   controller: _controller,
                   children: _list,
                   scrollDirection: Axis.horizontal,
+                  onPageChanged: (page) {
+                    setState(() {
+                      _currentPage = page;
+                    });
+                  },
                 ),
               ),
             ),
