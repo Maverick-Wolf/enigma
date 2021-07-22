@@ -16,7 +16,7 @@ class LargeScreen extends StatelessWidget {
       SafeArea(child: DesktopEducation()),
       SafeArea(child: DesktopContact()),
     ];
-    PageController controller = PageController(viewportFraction: 1.0);
+    PageController controller = PageController(viewportFraction: 1.1);
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.black,

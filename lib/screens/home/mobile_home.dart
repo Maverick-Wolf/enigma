@@ -74,7 +74,9 @@ class MobileHome extends StatelessWidget {
               backgroundImage: AssetImage('groot.png'),
               radius: 100.0,
             ),
-            Spacer(),
+            Spacer(
+              flex: 3,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
