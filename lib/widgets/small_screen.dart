@@ -1,3 +1,4 @@
+import 'package:enigma/screens/home/mobile_home.dart';
 import 'package:flutter/material.dart';
 
 class SmallScreen extends StatefulWidget {
@@ -9,7 +10,27 @@ class _SmallScreenState extends State<SmallScreen> {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
-    PageController controller = PageController(viewportFraction: 1.0);
+    List<Widget> _list = [
+      SafeArea(
+          child: MobileHome(),),
+      SafeArea(
+          child: Container(
+        color: Colors.grey[900],
+      )),
+      SafeArea(
+          child: Container(
+        color: Colors.black,
+      )),
+      SafeArea(
+          child: Container(
+        color: Colors.grey[900],
+      )),
+      SafeArea(
+          child: Container(
+        color: Colors.black,
+      )),
+    ];
+    PageController controller = PageController(viewportFraction: 1.1);
     return Scaffold(
       endDrawer: Drawer(),
       key: scaffoldKey,
@@ -25,27 +46,12 @@ class _SmallScreenState extends State<SmallScreen> {
           ],
         ),
       ),
-      body: PageView.builder(
-          scrollDirection: Axis.vertical,
-          pageSnapping: false,
-          controller: controller,
-          itemCount: 5,
-          itemBuilder: (context, index) {
-            return Padding(
-              padding: const EdgeInsets.all(5.0),
-              child: Container(
-                color: Colors.black,
-                // height: MediaQuery.of(context).size.height,
-                // width: MediaQuery.of(context).size.width,
-                child: Text(
-                  "This is Page Number ${index + 1}",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            );
-          }),
+      body: PageView(
+        scrollDirection: Axis.vertical,
+        pageSnapping: false,
+        controller: controller,
+        children: _list,
+      ),
     );
   }
 }
