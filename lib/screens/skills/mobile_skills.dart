@@ -15,7 +15,7 @@ class _MobileSkillsState extends State<MobileSkills> {
   @override
   void initState() {
     super.initState();
-    Timer.periodic(Duration(seconds: 2), (Timer timer) {
+    Timer.periodic(Duration(milliseconds: 3700), (Timer timer) {
       if (_currentPage < 3) {
         _currentPage++;
       } else {
@@ -23,7 +23,7 @@ class _MobileSkillsState extends State<MobileSkills> {
       }
       _controller.animateToPage(
         _currentPage,
-        duration: Duration(milliseconds: 350),
+        duration: Duration(milliseconds: 1000),
         curve: Curves.easeIn,
       );
     });
