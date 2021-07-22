@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:hovering/hovering.dart';
+import 'dart:js' as js;
 
 class DesktopEducation extends StatelessWidget {
   @override
@@ -25,38 +28,56 @@ class DesktopEducation extends StatelessWidget {
                 Column(
                   children: [
                     Center(
-                      child: Container(
-                        height: MediaQuery.of(context).size.height * 0.33,
-                        width: MediaQuery.of(context).size.width * 0.23,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20.0),
-                          color: Colors.black,
-                        ),
-                        child: Column(
-                          children: [
-                            Spacer(
-                              flex: 2,
-                            ),
-                            CircleAvatar(
-                              backgroundImage: AssetImage('assets/college.png'),
-                              radius: 35.0,
-                            ),
-                            Spacer(
-                              flex: 2,
-                            ),
-                            Text(
-                              "Birla Institute of Technology and Science, Pilani",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            Spacer(),
-                            Text(
-                              "Engineering in Electronics (2020-2024). ",
-                              style: TextStyle(color: Colors.white70),
-                            ),
-                            Spacer(
-                              flex: 3,
-                            ),
-                          ],
+                      child: InkWell(
+                        onTap: () {
+                          js.context.callMethod(
+                              'open', ['https://www.bits-pilani.ac.in/goa/']);
+                        },
+                        child: HoverContainer(
+                          cursor: SystemMouseCursors.click,
+                          height: MediaQuery.of(context).size.height * 0.33,
+                          width: MediaQuery.of(context).size.width * 0.23,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Colors.black,
+                          ),
+                          hoverDecoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Colors.black,
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.red[900],
+                                  blurRadius: 2.0,
+                                  offset: Offset(3.0, 3.0))
+                            ],
+                          ),
+                          child: Column(
+                            children: [
+                              Spacer(
+                                flex: 2,
+                              ),
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage('assets/college.png'),
+                                radius: 35.0,
+                              ),
+                              Spacer(
+                                flex: 2,
+                              ),
+                              Text(
+                                "Birla Institute of Technology and Science, Pilani",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Spacer(),
+                              Text(
+                                "Engineering in Electronics (2020-2024). ",
+                                style: TextStyle(color: Colors.white70),
+                              ),
+                              Spacer(
+                                flex: 3,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -66,85 +87,119 @@ class DesktopEducation extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          height: MediaQuery.of(context).size.height * 0.33,
-                          width: MediaQuery.of(context).size.width * 0.23,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.0),
-                            color: Colors.black,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Spacer(
-                                flex: 2,
-                              ),
-                              CircleAvatar(
-                                backgroundImage: AssetImage('school.png'),
-                                radius: 35.0,
-                              ),
-                              Spacer(
-                                flex: 2,
-                              ),
-                              Text(
-                                "The Air Force School, Subroto Park",
-                                style: TextStyle(
-                                  color: Colors.white,
+                        InkWell(
+                          onTap: () {
+                            js.context.callMethod(
+                                'open', ['https://www.tafssp.com/']);
+                          },
+                          child: HoverContainer(
+                            cursor: SystemMouseCursors.click,
+                            height: MediaQuery.of(context).size.height * 0.33,
+                            width: MediaQuery.of(context).size.width * 0.23,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                              color: Colors.black,
+                            ),
+                            hoverDecoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                              color: Colors.black,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.red[900],
+                                    blurRadius: 2.0,
+                                    offset: Offset(3.0, 3.0))
+                              ],
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Spacer(
+                                  flex: 2,
                                 ),
-                              ),
-                              Spacer(),
-                              Center(
-                                child: Text(
-                                  "Higher Secondary Education (2018-2020).",
-                                  style: TextStyle(color: Colors.white70),
+                                CircleAvatar(
+                                  backgroundImage: AssetImage('school.png'),
+                                  radius: 35.0,
                                 ),
-                              ),
-                              Spacer(
-                                flex: 3,
-                              ),
-                            ],
+                                Spacer(
+                                  flex: 2,
+                                ),
+                                Text(
+                                  "The Air Force School, Subroto Park",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Spacer(),
+                                Center(
+                                  child: Text(
+                                    "Higher Secondary Education (2018-2020).",
+                                    style: TextStyle(color: Colors.white70),
+                                  ),
+                                ),
+                                Spacer(
+                                  flex: 3,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         SizedBox(
                           width: 20.0,
                         ),
-                        Container(
-                          height: MediaQuery.of(context).size.height * 0.33,
-                          width: MediaQuery.of(context).size.width * 0.23,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.0),
-                            color: Colors.black,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Spacer(
-                                flex: 2,
-                              ),
-                              CircleAvatar(
-                                backgroundImage: AssetImage('tafs.jpg'),
-                                radius: 35.0,
-                              ),
-                              Spacer(
-                                flex: 2,
-                              ),
-                              Text(
-                                "The Air Force School, Subroto Park",
-                                style: TextStyle(
-                                  color: Colors.white,
+                        InkWell(
+                          onTap: () {
+                            js.context.callMethod(
+                                'open', ['https://www.tafssp.com/']);
+                          },
+                          child: HoverContainer(
+                            cursor: SystemMouseCursors.click,
+                            height: MediaQuery.of(context).size.height * 0.33,
+                            width: MediaQuery.of(context).size.width * 0.23,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                              color: Colors.black,
+                            ),
+                            hoverDecoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                              color: Colors.black,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.red[900],
+                                    blurRadius: 2.0,
+                                    offset: Offset(3.0, 3.0))
+                              ],
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Spacer(
+                                  flex: 2,
                                 ),
-                              ),
-                              Spacer(),
-                              Center(
-                                child: Text(
-                                  "Secondary School Education (2013-2018).",
-                                  style: TextStyle(color: Colors.white70),
+                                CircleAvatar(
+                                  backgroundImage: AssetImage('tafs.jpg'),
+                                  radius: 35.0,
                                 ),
-                              ),
-                              Spacer(
-                                flex: 3,
-                              ),
-                            ],
+                                Spacer(
+                                  flex: 2,
+                                ),
+                                Text(
+                                  "The Air Force School, Subroto Park",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Spacer(),
+                                Center(
+                                  child: Text(
+                                    "Secondary School Education (2013-2018).",
+                                    style: TextStyle(color: Colors.white70),
+                                  ),
+                                ),
+                                Spacer(
+                                  flex: 3,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],

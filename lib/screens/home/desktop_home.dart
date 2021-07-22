@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'dart:js' as js;
 
 class DesktopHome extends StatelessWidget {
   @override
@@ -84,7 +85,10 @@ class DesktopHome extends StatelessWidget {
                           size: 40.0,
                           color: Colors.white,
                         ),
-                        onPressed: () {}),
+                        onPressed: () {
+                          js.context.callMethod(
+                              'open', ['https://github.com/Maverick-Wolf']);
+                        }),
                     SizedBox(
                       width: 30.0,
                     ),
@@ -94,7 +98,11 @@ class DesktopHome extends StatelessWidget {
                           size: 40.0,
                           color: Colors.white,
                         ),
-                        onPressed: () {}),
+                        onPressed: () {
+                          js.context.callMethod('open', [
+                            'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
+                          ]);
+                        }),
                     SizedBox(
                       width: 30.0,
                     ),
@@ -104,7 +112,10 @@ class DesktopHome extends StatelessWidget {
                           color: Colors.white,
                           size: 40.0,
                         ),
-                        onPressed: () {}),
+                        onPressed: () {
+                          js.context.callMethod('open',
+                              ['https://www.reddit.com/user/Branded-Devil']);
+                        }),
                     SizedBox(
                       width: 30.0,
                     ),
@@ -114,7 +125,10 @@ class DesktopHome extends StatelessWidget {
                           size: 40.0,
                           color: Colors.white,
                         ),
-                        onPressed: () {}),
+                        onPressed: () {
+                          js.context.callMethod(
+                              'open', ['https://www.instagram.com/imrachitt/']);
+                        }),
                     SizedBox(
                       width: 30.0,
                     ),
@@ -124,7 +138,10 @@ class DesktopHome extends StatelessWidget {
                           size: 40.0,
                           color: Colors.white,
                         ),
-                        onPressed: () {}),
+                        onPressed: () {
+                          js.context.callMethod('open',
+                              ['https://top.gg/user/549820835230253060']);
+                        }),
                   ],
                 ),
                 Spacer(

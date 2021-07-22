@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hovering/hovering.dart';
+import 'dart:js' as js;
 
 class DesktopContact extends StatelessWidget {
   @override
@@ -167,7 +168,10 @@ class DesktopContact extends StatelessWidget {
                       size: 40.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod(
+                          'open', ['https://github.com/Maverick-Wolf']);
+                    }),
                 Spacer(),
                 IconButton(
                     icon: FaIcon(
@@ -175,7 +179,11 @@ class DesktopContact extends StatelessWidget {
                       size: 40.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod('open', [
+                        'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
+                      ]);
+                    }),
                 Spacer(),
                 IconButton(
                     icon: FaIcon(
@@ -183,7 +191,10 @@ class DesktopContact extends StatelessWidget {
                       size: 40.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod('open',
+                          ['https://www.reddit.com/user/Branded-Devil']);
+                    }),
                 Spacer(),
                 IconButton(
                     icon: FaIcon(
@@ -191,7 +202,10 @@ class DesktopContact extends StatelessWidget {
                       size: 40.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod(
+                          'open', ['https://www.instagram.com/imrachitt/']);
+                    }),
                 Spacer(),
                 IconButton(
                     icon: FaIcon(
@@ -199,7 +213,10 @@ class DesktopContact extends StatelessWidget {
                       size: 40.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod(
+                          'open', ['https://top.gg/user/549820835230253060']);
+                    }),
                 Spacer(
                   flex: 4,
                 ),

@@ -44,6 +44,16 @@ class DesktopSkills extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20.0),
                             color: Colors.grey[850],
                           ),
+                          hoverDecoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Colors.grey[850],
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.red[700],
+                                  blurRadius: 6.0,
+                                  offset: Offset(4.0, 4.0))
+                            ],
+                          ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -59,6 +69,14 @@ class DesktopSkills extends StatelessWidget {
                                 "Flutter App Development",
                                 style: TextStyle(color: Colors.white),
                               ),
+                              // AnimatedTextKit(
+                              //   animatedTexts: [
+                              //     TyperAnimatedText("Flutter App Development",
+                              //         textStyle: TextStyle(color: Colors.white),
+                              //         speed: Duration(milliseconds: 70))
+                              //   ],
+                              //   totalRepeatCount: 1,
+                              // )
                             ],
                           ),
                         ),
@@ -71,6 +89,16 @@ class DesktopSkills extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20.0),
                             color: Colors.grey[850],
+                          ),
+                          hoverDecoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Colors.grey[850],
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.red[700],
+                                  blurRadius: 6.0,
+                                  offset: Offset(4.0, 4.0))
+                            ],
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -87,6 +115,14 @@ class DesktopSkills extends StatelessWidget {
                                 "Flutter Web Development",
                                 style: TextStyle(color: Colors.white),
                               ),
+                              // AnimatedTextKit(
+                              //   animatedTexts: [
+                              //     TyperAnimatedText("Flutter Web Development",
+                              //         textStyle: TextStyle(color: Colors.white),
+                              //         speed: Duration(milliseconds: 70))
+                              //   ],
+                              //   totalRepeatCount: 1,
+                              // )
                             ],
                           ),
                         ),
@@ -105,6 +141,16 @@ class DesktopSkills extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20.0),
                             color: Colors.grey[850],
                           ),
+                          hoverDecoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Colors.grey[850],
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.red[700],
+                                  blurRadius: 6.0,
+                                  offset: Offset(4.0, 4.0))
+                            ],
+                          ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -120,6 +166,14 @@ class DesktopSkills extends StatelessWidget {
                                 "Discord Bot Development",
                                 style: TextStyle(color: Colors.white),
                               ),
+                              // AnimatedTextKit(
+                              //   animatedTexts: [
+                              //     TyperAnimatedText("Discord Bot Development",
+                              //         textStyle: TextStyle(color: Colors.white),
+                              //         speed: Duration(milliseconds: 70))
+                              //   ],
+                              //   totalRepeatCount: 1,
+                              // )
                             ],
                           ),
                         ),
@@ -132,6 +186,16 @@ class DesktopSkills extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20.0),
                             color: Colors.grey[850],
+                          ),
+                          hoverDecoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Colors.grey[850],
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.red[700],
+                                  blurRadius: 6.0,
+                                  offset: Offset(4.0, 4.0))
+                            ],
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -148,6 +212,14 @@ class DesktopSkills extends StatelessWidget {
                                 "Open Source - Githib",
                                 style: TextStyle(color: Colors.white),
                               ),
+                              // AnimatedTextKit(
+                              //   animatedTexts: [
+                              //     TyperAnimatedText("Open Source - Github",
+                              //         textStyle: TextStyle(color: Colors.white),
+                              //         speed: Duration(milliseconds: 70))
+                              //   ],
+                              //   totalRepeatCount: 1,
+                              // )
                             ],
                           ),
                         ),
