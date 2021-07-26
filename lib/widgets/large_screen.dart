@@ -50,7 +50,6 @@ class LargeScreen extends StatelessWidget {
               ),
               Spacer(),
               HoverButton(
-                hoverShape: RoundedRectangleBorder(),
                 onpressed: () {
                   controller.animateToPage(1,
                       duration: Duration(milliseconds: 1200),
@@ -119,6 +118,7 @@ class LargeScreen extends StatelessWidget {
             ],
           )),
       body: RawScrollbar(
+        timeToFade: Duration(milliseconds: 1300),
         controller: controller,
         thumbColor: Colors.white70,
         thickness: 10.0,
