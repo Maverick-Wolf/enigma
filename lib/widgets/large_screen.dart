@@ -5,6 +5,7 @@ import 'package:enigma/screens/home/desktop_home.dart';
 import 'package:enigma/screens/skills/desktop_skills.dart';
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LargeScreen extends StatelessWidget {
   @override
@@ -24,11 +25,27 @@ class LargeScreen extends StatelessWidget {
           title: Row(
             children: [
               Spacer(),
-              Text(
-                "<Maverick Wolf/>",
-                style: TextStyle(
-                  fontSize: 20.0,
-                ),
+              RichText(
+                text: TextSpan(
+                    text: "< ",
+                    style: TextStyle(color: Colors.white, fontSize: 20.0),
+                    children: [
+                      TextSpan(
+                          text: "Rachit Chaudhary",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 35.0,
+                            fontFamily: 'Fuggles',
+                          )),
+                      TextSpan(
+                        text: " /",
+                        style: TextStyle(color: Colors.white70, fontSize: 20.0),
+                      ),
+                      TextSpan(
+                        text: ">",
+                        style: TextStyle(color: Colors.white, fontSize: 20.0),
+                      ),
+                    ]),
               ),
               Spacer(
                 flex: 30,
