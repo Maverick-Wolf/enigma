@@ -125,14 +125,36 @@ class _SmallScreenState extends State<SmallScreen> {
         ),
       ),
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.black,
+        iconTheme: IconThemeData(color: Colors.white),
         elevation: 0.0,
         title: Row(
           children: [
             SizedBox(
               width: 10.0,
             ),
-            Text("<Maverick Wolf/>"),
+            RichText(
+              text: TextSpan(
+                  text: "< ",
+                  style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  children: [
+                    TextSpan(
+                        text: "Rachit Chaudhary",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35.0,
+                          fontFamily: 'Fuggles',
+                        )),
+                    TextSpan(
+                      text: " /",
+                      style: TextStyle(color: Colors.white70, fontSize: 20.0),
+                    ),
+                    TextSpan(
+                      text: ">",
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
+                    ),
+                  ]),
+            ),
           ],
         ),
       ),

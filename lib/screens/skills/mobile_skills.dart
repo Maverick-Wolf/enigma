@@ -21,11 +21,13 @@ class _MobileSkillsState extends State<MobileSkills> {
       } else {
         _currentPage = 0;
       }
-      _controller.animateToPage(
-        _currentPage,
-        duration: Duration(milliseconds: 1000),
-        curve: Curves.easeIn,
-      );
+      if (_controller.hasClients) {
+        _controller.animateToPage(
+          _currentPage,
+          duration: Duration(milliseconds: 1000),
+          curve: Curves.easeIn,
+        );
+      }
     });
   }
 
