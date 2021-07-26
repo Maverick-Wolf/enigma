@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'dart:js' as js;
 
 class MobileHome extends StatelessWidget {
   @override
@@ -86,7 +87,10 @@ class MobileHome extends StatelessWidget {
                       size: 35.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod(
+                          'open', ['https://github.com/Maverick-Wolf']);
+                    }),
                 SizedBox(
                   width: 20.0,
                 ),
@@ -96,7 +100,11 @@ class MobileHome extends StatelessWidget {
                       size: 35.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod('open', [
+                        'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
+                      ]);
+                    }),
                 SizedBox(
                   width: 20.0,
                 ),
@@ -106,7 +114,10 @@ class MobileHome extends StatelessWidget {
                       color: Colors.white,
                       size: 35.0,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod('open',
+                          ['https://www.reddit.com/user/Branded-Devil']);
+                    }),
                 SizedBox(
                   width: 20.0,
                 ),
@@ -116,7 +127,10 @@ class MobileHome extends StatelessWidget {
                       size: 35.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod(
+                          'open', ['https://www.instagram.com/imrachitt/']);
+                    }),
                 SizedBox(
                   width: 20.0,
                 ),
@@ -126,7 +140,10 @@ class MobileHome extends StatelessWidget {
                       size: 35.0,
                       color: Colors.white,
                     ),
-                    onPressed: () {}),
+                    onPressed: () {
+                      js.context.callMethod(
+                          'open', ['https://top.gg/user/549820835230253060']);
+                    }),
               ],
             ),
             Spacer(flex: 8),
