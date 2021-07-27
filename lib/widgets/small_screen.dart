@@ -34,8 +34,9 @@ class _SmallScreenState extends State<SmallScreen> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15.0),
+                  border: Border.all(color: Colors.white, width: 1.5),
                   image: DecorationImage(
-                    image: AssetImage('assets/drawer.jpg'),
+                    image: AssetImage('assets/drawer.gif'),
                     fit: BoxFit.cover,
                   ),
                 ),

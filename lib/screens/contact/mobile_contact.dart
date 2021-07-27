@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hovering/hovering.dart';
 import 'dart:js' as js;
@@ -208,69 +209,79 @@ class _MobileContactState extends State<MobileContact> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Spacer(
-                  flex: 4,
+              children: AnimationConfiguration.toStaggeredList(
+                duration: Duration(milliseconds: 700),
+                childAnimationBuilder: (widget) => SlideAnimation(
+                  child: FadeInAnimation(
+                    child: widget,
+                  ),
                 ),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.github,
-                      size: 40.0,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      js.context.callMethod(
-                          'open', ['https://github.com/Maverick-Wolf']);
-                    }),
-                Spacer(),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.linkedin,
-                      size: 40.0,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      js.context.callMethod('open', [
-                        'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
-                      ]);
-                    }),
-                Spacer(),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.reddit,
-                      size: 40.0,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      js.context.callMethod('open',
-                          ['https://www.reddit.com/user/Branded-Devil']);
-                    }),
-                Spacer(),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.instagram,
-                      size: 40.0,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      js.context.callMethod(
-                          'open', ['https://www.instagram.com/imrachitt/']);
-                    }),
-                Spacer(),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.discord,
-                      size: 40.0,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      js.context.callMethod(
-                          'open', ['https://top.gg/user/549820835230253060']);
-                    }),
-                Spacer(
-                  flex: 4,
-                ),
-              ],
+                children: [
+                  IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.github,
+                        size: 40.0,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        js.context.callMethod(
+                            'open', ['https://github.com/Maverick-Wolf']);
+                      }),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.linkedin,
+                        size: 40.0,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        js.context.callMethod('open', [
+                          'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
+                        ]);
+                      }),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.reddit,
+                        size: 40.0,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        js.context.callMethod('open',
+                            ['https://www.reddit.com/user/Branded-Devil']);
+                      }),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.instagram,
+                        size: 40.0,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        js.context.callMethod(
+                            'open', ['https://www.instagram.com/imrachitt/']);
+                      }),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.discord,
+                        size: 40.0,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        js.context.callMethod(
+                            'open', ['https://top.gg/user/549820835230253060']);
+                      }),
+                ],
+              ),
             ),
             Spacer(
               flex: 5,
