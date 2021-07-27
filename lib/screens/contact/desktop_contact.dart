@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hovering/hovering.dart';
 import 'dart:js' as js;
 
 class DesktopContact extends StatelessWidget {
@@ -24,135 +24,150 @@ class DesktopContact extends StatelessWidget {
               height: 40.0,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                HoverContainer(
-                  height: MediaQuery.of(context).size.height * 0.27,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: Colors.grey[850],
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: AnimationConfiguration.toStaggeredList(
+                  duration: Duration(milliseconds: 1200),
+                  childAnimationBuilder: (widget) => SlideAnimation(
+                    child: FadeInAnimation(
+                      child: widget,
+                    ),
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.home,
-                        size: 50.0,
-                        color: Colors.redAccent,
+                  children: [
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.27,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        color: Colors.grey[850],
                       ),
-                      Text(
-                        "Location",
-                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.home,
+                            size: 50.0,
+                            color: Colors.redAccent,
+                          ),
+                          Text(
+                            "Location",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 16.0),
+                          ),
+                          SizedBox(
+                            height: 7.0,
+                          ),
+                          Text(
+                            "Delhi, India",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 12.0),
+                          )
+                        ],
                       ),
-                      SizedBox(
-                        height: 7.0,
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.27,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        color: Colors.grey[850],
                       ),
-                      Text(
-                        "Delhi, India",
-                        style: TextStyle(color: Colors.white, fontSize: 12.0),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 15.0,
-                ),
-                HoverContainer(
-                  height: MediaQuery.of(context).size.height * 0.27,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: Colors.grey[850],
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        size: 50.0,
-                        color: Colors.redAccent,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.phone,
+                            size: 50.0,
+                            color: Colors.redAccent,
+                          ),
+                          Text(
+                            "Phone",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 16.0),
+                          ),
+                          SizedBox(
+                            height: 7.0,
+                          ),
+                          Text(
+                            "(+91) 8587955277",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 12.0),
+                          )
+                        ],
                       ),
-                      Text(
-                        "Phone",
-                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.27,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        color: Colors.grey[850],
                       ),
-                      SizedBox(
-                        height: 7.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.mail,
+                            size: 50.0,
+                            color: Colors.redAccent,
+                          ),
+                          Text(
+                            "Email",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 16.0),
+                          ),
+                          SizedBox(
+                            height: 7.0,
+                          ),
+                          Text(
+                            "rachau76@gmail.com",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 12.0),
+                          )
+                        ],
                       ),
-                      Text(
-                        "(+91) 8587955277",
-                        style: TextStyle(color: Colors.white, fontSize: 12.0),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 15.0,
-                ),
-                HoverContainer(
-                  height: MediaQuery.of(context).size.height * 0.27,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: Colors.grey[850],
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.mail,
-                        size: 50.0,
-                        color: Colors.redAccent,
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.27,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        color: Colors.grey[850],
                       ),
-                      Text(
-                        "Email",
-                        style: TextStyle(color: Colors.white, fontSize: 16.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          FaIcon(
+                            FontAwesomeIcons.discord,
+                            size: 50.0,
+                            color: Colors.redAccent,
+                          ),
+                          Text(
+                            "Discord",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 16.0),
+                          ),
+                          SizedBox(
+                            height: 7.0,
+                          ),
+                          Text(
+                            "Maverick Wolf#6565",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 12.0),
+                          )
+                        ],
                       ),
-                      SizedBox(
-                        height: 7.0,
-                      ),
-                      Text(
-                        "rachau76@gmail.com",
-                        style: TextStyle(color: Colors.white, fontSize: 12.0),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 15.0,
-                ),
-                HoverContainer(
-                  height: MediaQuery.of(context).size.height * 0.27,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: Colors.grey[850],
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      FaIcon(
-                        FontAwesomeIcons.discord,
-                        size: 50.0,
-                        color: Colors.redAccent,
-                      ),
-                      Text(
-                        "Discord",
-                        style: TextStyle(color: Colors.white, fontSize: 16.0),
-                      ),
-                      SizedBox(
-                        height: 7.0,
-                      ),
-                      Text(
-                        "Maverick Wolf#6565",
-                        style: TextStyle(color: Colors.white, fontSize: 12.0),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
+                    ),
+                  ],
+                )),
             SizedBox(
               height: 50.0,
             ),
