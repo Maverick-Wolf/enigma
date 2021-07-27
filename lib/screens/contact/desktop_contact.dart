@@ -174,9 +174,6 @@ class DesktopContact extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Spacer(
-                  flex: 4,
-                ),
                 IconButton(
                     icon: FaIcon(
                       FontAwesomeIcons.github,
@@ -187,7 +184,9 @@ class DesktopContact extends StatelessWidget {
                       js.context.callMethod(
                           'open', ['https://github.com/Maverick-Wolf']);
                     }),
-                Spacer(),
+                SizedBox(
+                  width: 60.0,
+                ),
                 IconButton(
                     icon: FaIcon(
                       FontAwesomeIcons.linkedin,
@@ -199,7 +198,9 @@ class DesktopContact extends StatelessWidget {
                         'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
                       ]);
                     }),
-                Spacer(),
+                SizedBox(
+                  width: 60.0,
+                ),
                 IconButton(
                     icon: FaIcon(
                       FontAwesomeIcons.reddit,
@@ -210,7 +211,9 @@ class DesktopContact extends StatelessWidget {
                       js.context.callMethod('open',
                           ['https://www.reddit.com/user/Branded-Devil']);
                     }),
-                Spacer(),
+                SizedBox(
+                  width: 60.0,
+                ),
                 IconButton(
                     icon: FaIcon(
                       FontAwesomeIcons.instagram,
@@ -221,7 +224,9 @@ class DesktopContact extends StatelessWidget {
                       js.context.callMethod(
                           'open', ['https://www.instagram.com/imrachitt/']);
                     }),
-                Spacer(),
+                SizedBox(
+                  width: 60.0,
+                ),
                 IconButton(
                     icon: FaIcon(
                       FontAwesomeIcons.discord,
@@ -232,9 +237,6 @@ class DesktopContact extends StatelessWidget {
                       js.context.callMethod(
                           'open', ['https://top.gg/user/549820835230253060']);
                     }),
-                Spacer(
-                  flex: 4,
-                ),
               ],
             ),
           ],
