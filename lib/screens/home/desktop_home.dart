@@ -30,10 +30,12 @@ class DesktopHome extends StatelessWidget {
                       "WELCOME TO MY PORTFOLIO!!",
                       style: TextStyle(color: Colors.white, fontSize: 22.0),
                     ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
                     Text(
                       "Rachit",
-                      style:
-                          TextStyle(color: Colors.redAccent, fontSize: 40.0),
+                      style: TextStyle(color: Colors.redAccent, fontSize: 40.0),
                     ),
                     Text(
                       "Chaudhary",
@@ -41,6 +43,9 @@ class DesktopHome extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontSize: 40.0),
+                    ),
+                    SizedBox(
+                      height: 25.0,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -56,18 +61,15 @@ class DesktopHome extends StatelessWidget {
                           width: 300.0,
                           child: AnimatedTextKit(
                             animatedTexts: [
-                              TypewriterAnimatedText(
-                                  "Flutter App Development",
+                              TypewriterAnimatedText("Flutter App Development",
                                   textStyle: TextStyle(
                                       color: Colors.white, fontSize: 22.0),
                                   speed: Duration(milliseconds: 100)),
-                              TypewriterAnimatedText(
-                                  "Flutter Web Development",
+                              TypewriterAnimatedText("Flutter Web Development",
                                   textStyle: TextStyle(
                                       color: Colors.white, fontSize: 22.0),
                                   speed: Duration(milliseconds: 100)),
-                              TypewriterAnimatedText(
-                                  "Discord Bot Development",
+                              TypewriterAnimatedText("Discord Bot Development",
                                   textStyle: TextStyle(
                                       color: Colors.white, fontSize: 22.0),
                                   speed: Duration(milliseconds: 100)),
@@ -81,6 +83,9 @@ class DesktopHome extends StatelessWidget {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 15.0,
+                    ),
                     Row(
                       children: [
                         IconButton(
@@ -90,8 +95,8 @@ class DesktopHome extends StatelessWidget {
                               color: Colors.white,
                             ),
                             onPressed: () {
-                              js.context.callMethod('open',
-                                  ['https://github.com/Maverick-Wolf']);
+                              js.context.callMethod(
+                                  'open', ['https://github.com/Maverick-Wolf']);
                             }),
                         SizedBox(
                           width: 30.0,

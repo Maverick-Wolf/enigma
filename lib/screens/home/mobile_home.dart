@@ -13,7 +13,7 @@ class MobileHome extends StatelessWidget {
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: AnimationConfiguration.toStaggeredList(
-              duration: Duration(milliseconds: 1300),
+              duration: Duration(milliseconds: 1200),
               childAnimationBuilder: (widget) => SlideAnimation(
                 child: FadeInAnimation(
                   child: widget,
@@ -23,6 +23,9 @@ class MobileHome extends StatelessWidget {
                 Text(
                   "HEY THERE!!",
                   style: TextStyle(color: Colors.white, fontSize: 18.0),
+                ),
+                SizedBox(
+                  height: 20.0,
                 ),
                 Text(
                   "Rachit",
@@ -34,6 +37,9 @@ class MobileHome extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                       fontSize: 32.0),
+                ),
+                SizedBox(
+                  height: 15.0,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -71,9 +77,15 @@ class MobileHome extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: 15.0,
+                ),
                 CircleAvatar(
                   backgroundImage: AssetImage('groot.png'),
-                  radius: 100.0,
+                  radius: 90.0,
+                ),
+                SizedBox(
+                  height: 10.0,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -81,7 +93,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.github,
-                          size: 35.0,
+                          size: 32.0,
                           color: Colors.white,
                         ),
                         onPressed: () {
@@ -94,7 +106,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.linkedin,
-                          size: 35.0,
+                          size: 32.0,
                           color: Colors.white,
                         ),
                         onPressed: () {
@@ -109,7 +121,7 @@ class MobileHome extends StatelessWidget {
                         icon: FaIcon(
                           FontAwesomeIcons.reddit,
                           color: Colors.white,
-                          size: 35.0,
+                          size: 32.0,
                         ),
                         onPressed: () {
                           js.context.callMethod('open',
@@ -121,7 +133,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.instagram,
-                          size: 35.0,
+                          size: 32.0,
                           color: Colors.white,
                         ),
                         onPressed: () {
@@ -134,7 +146,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.discord,
-                          size: 35.0,
+                          size: 32.0,
                           color: Colors.white,
                         ),
                         onPressed: () {

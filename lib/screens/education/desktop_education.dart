@@ -90,13 +90,23 @@ class DesktopEducation extends StatelessWidget {
                                       width: 2.0,
                                     )),
                                 child: Align(
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    "Visit Website ❯",
-                                    style: TextStyle(
-                                        color: Colors.white70, fontSize: 15.0),
-                                  ),
-                                ),
+                                    alignment: Alignment.center,
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Visit Website",
+                                          style: TextStyle(
+                                              color: Colors.white70,
+                                              fontSize: 15.0),
+                                        ),
+                                        Icon(
+                                          Icons.keyboard_arrow_right,
+                                          color: Colors.white70,
+                                        )
+                                      ],
+                                    )),
                               ),
                             ),
                           ),
@@ -176,14 +186,23 @@ class DesktopEducation extends StatelessWidget {
                                         width: 2.0,
                                       )),
                                   child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "Visit Website ❯",
-                                      style: TextStyle(
-                                          color: Colors.white70,
-                                          fontSize: 15.0),
-                                    ),
-                                  ),
+                                      alignment: Alignment.center,
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "Visit Website",
+                                            style: TextStyle(
+                                                color: Colors.white70,
+                                                fontSize: 15.0),
+                                          ),
+                                          Icon(
+                                            Icons.keyboard_arrow_right,
+                                            color: Colors.white70,
+                                          )
+                                        ],
+                                      )),
                                 ),
                               ),
                             ),
@@ -248,25 +267,34 @@ class DesktopEducation extends StatelessWidget {
                               ),
                               child: Center(
                                 child: Container(
-                                  width: 130.0,
-                                  height: 40.0,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(13.0),
-                                      color: Colors.transparent,
-                                      border: Border.all(
-                                        color: Color(0xFF6C63FF),
-                                        width: 2.0,
-                                      )),
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "Visit Website ❯",
-                                      style: TextStyle(
-                                          color: Colors.white70,
-                                          fontSize: 15.0),
-                                    ),
-                                  ),
-                                ),
+                                    width: 130.0,
+                                    height: 40.0,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(13.0),
+                                        color: Colors.transparent,
+                                        border: Border.all(
+                                          color: Color(0xFF6C63FF),
+                                          width: 2.0,
+                                        )),
+                                    child: Align(
+                                        alignment: Alignment.center,
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              "Visit Website",
+                                              style: TextStyle(
+                                                  color: Colors.white70,
+                                                  fontSize: 15.0),
+                                            ),
+                                            Icon(
+                                              Icons.keyboard_arrow_right,
+                                              color: Colors.white70,
+                                            )
+                                          ],
+                                        ))),
                               ),
                             ),
                           ),

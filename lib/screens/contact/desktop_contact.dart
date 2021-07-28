@@ -26,7 +26,7 @@ class DesktopContact extends StatelessWidget {
             Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: AnimationConfiguration.toStaggeredList(
-                  duration: Duration(milliseconds: 1200),
+                  duration: Duration(milliseconds: 1000),
                   childAnimationBuilder: (widget) => SlideAnimation(
                     child: FadeInAnimation(
                       child: widget,
@@ -172,73 +172,80 @@ class DesktopContact extends StatelessWidget {
               height: 50.0,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.github,
-                      size: 40.0,
-                      color: Colors.white,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: AnimationConfiguration.toStaggeredList(
+                  duration: Duration(milliseconds: 1000),
+                  childAnimationBuilder: (widget) => SlideAnimation(
+                    child: FadeInAnimation(
+                      child: widget,
                     ),
-                    onPressed: () {
-                      js.context.callMethod(
-                          'open', ['https://github.com/Maverick-Wolf']);
-                    }),
-                SizedBox(
-                  width: 60.0,
-                ),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.linkedin,
-                      size: 40.0,
-                      color: Colors.white,
+                  ),
+                  children: [
+                    IconButton(
+                        icon: FaIcon(
+                          FontAwesomeIcons.github,
+                          size: 40.0,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          js.context.callMethod(
+                              'open', ['https://github.com/Maverick-Wolf']);
+                        }),
+                    SizedBox(
+                      width: 60.0,
                     ),
-                    onPressed: () {
-                      js.context.callMethod('open', [
-                        'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
-                      ]);
-                    }),
-                SizedBox(
-                  width: 60.0,
-                ),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.reddit,
-                      size: 40.0,
-                      color: Colors.white,
+                    IconButton(
+                        icon: FaIcon(
+                          FontAwesomeIcons.linkedin,
+                          size: 40.0,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          js.context.callMethod('open', [
+                            'https://www.linkedin.com/in/rachit-chaudhary-8217b8204/'
+                          ]);
+                        }),
+                    SizedBox(
+                      width: 60.0,
                     ),
-                    onPressed: () {
-                      js.context.callMethod('open',
-                          ['https://www.reddit.com/user/Branded-Devil']);
-                    }),
-                SizedBox(
-                  width: 60.0,
-                ),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.instagram,
-                      size: 40.0,
-                      color: Colors.white,
+                    IconButton(
+                        icon: FaIcon(
+                          FontAwesomeIcons.reddit,
+                          size: 40.0,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          js.context.callMethod('open',
+                              ['https://www.reddit.com/user/Branded-Devil']);
+                        }),
+                    SizedBox(
+                      width: 60.0,
                     ),
-                    onPressed: () {
-                      js.context.callMethod(
-                          'open', ['https://www.instagram.com/imrachitt/']);
-                    }),
-                SizedBox(
-                  width: 60.0,
-                ),
-                IconButton(
-                    icon: FaIcon(
-                      FontAwesomeIcons.discord,
-                      size: 40.0,
-                      color: Colors.white,
+                    IconButton(
+                        icon: FaIcon(
+                          FontAwesomeIcons.instagram,
+                          size: 40.0,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          js.context.callMethod(
+                              'open', ['https://www.instagram.com/imrachitt/']);
+                        }),
+                    SizedBox(
+                      width: 60.0,
                     ),
-                    onPressed: () {
-                      js.context.callMethod(
-                          'open', ['https://top.gg/user/549820835230253060']);
-                    }),
-              ],
-            ),
+                    IconButton(
+                        icon: FaIcon(
+                          FontAwesomeIcons.discord,
+                          size: 40.0,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {
+                          js.context.callMethod('open',
+                              ['https://top.gg/user/549820835230253060']);
+                        }),
+                  ],
+                )),
           ],
         ),
       ),
