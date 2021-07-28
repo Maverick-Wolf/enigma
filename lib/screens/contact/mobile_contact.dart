@@ -210,7 +210,7 @@ class _MobileContactState extends State<MobileContact> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: AnimationConfiguration.toStaggeredList(
-                duration: Duration(milliseconds: 700),
+                duration: Duration(milliseconds: 900),
                 childAnimationBuilder: (widget) => SlideAnimation(
                   child: FadeInAnimation(
                     child: widget,

@@ -246,6 +246,26 @@ class DesktopContact extends StatelessWidget {
                         }),
                   ],
                 )),
+            // SizedBox(
+            //   height: MediaQuery.of(context).size.height * 0.2,
+            // ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     Text(
+            //       "Made with ",
+            //       style: TextStyle(color: Colors.white70),
+            //     ),
+            //     Icon(
+            //       Icons.favorite,
+            //       color: Colors.red,
+            //     ),
+            //     Text(
+            //       " by Rachit CHaudhary",
+            //       style: TextStyle(color: Colors.white70),
+            //     )
+            //   ],
+            // )
           ],
         ),
       ),
