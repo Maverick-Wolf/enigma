@@ -93,7 +93,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.github,
-                          size: 32.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
                         onPressed: () {
@@ -106,7 +106,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.linkedin,
-                          size: 32.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
                         onPressed: () {
@@ -121,7 +121,7 @@ class MobileHome extends StatelessWidget {
                         icon: FaIcon(
                           FontAwesomeIcons.reddit,
                           color: Colors.white,
-                          size: 32.0,
+                          size: 40.0,
                         ),
                         onPressed: () {
                           js.context.callMethod('open',
@@ -133,7 +133,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.instagram,
-                          size: 32.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
                         onPressed: () {
@@ -146,7 +146,7 @@ class MobileHome extends StatelessWidget {
                     IconButton(
                         icon: FaIcon(
                           FontAwesomeIcons.discord,
-                          size: 32.0,
+                          size: 40.0,
                           color: Colors.white,
                         ),
                         onPressed: () {

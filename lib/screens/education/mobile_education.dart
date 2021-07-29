@@ -100,7 +100,7 @@ class _MobileEducationState extends State<MobileEducation> {
                   flex: 2,
                 ),
                 CircleAvatar(
-                  backgroundImage: AssetImage('mainschool.png'),
+                  backgroundImage: AssetImage('school7.jpg'),
                   backgroundColor: Colors.transparent,
                   radius: 35.0,
                 ),
@@ -149,7 +149,7 @@ class _MobileEducationState extends State<MobileEducation> {
                   flex: 2,
                 ),
                 CircleAvatar(
-                  backgroundImage: AssetImage('tafs.png'),
+                  backgroundImage: AssetImage('school2.jpg'),
                   radius: 35.0,
                   backgroundColor: Colors.transparent,
                 ),
