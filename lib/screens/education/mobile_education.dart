@@ -56,7 +56,7 @@ class _MobileEducationState extends State<MobileEducation> {
                 ),
                 CircleAvatar(
                   backgroundImage: AssetImage('assets/college.png'),
-                  radius: 35.0,
+                  radius: 40.0,
                 ),
                 Spacer(
                   flex: 2,
@@ -99,8 +99,8 @@ class _MobileEducationState extends State<MobileEducation> {
                   flex: 2,
                 ),
                 CircleAvatar(
-                  backgroundImage: AssetImage('school4.png'),
-                  radius: 35.0,
+                  backgroundImage: AssetImage('school.png'),
+                  radius: 40.0,
                 ),
                 Spacer(
                   flex: 2,
@@ -147,8 +147,8 @@ class _MobileEducationState extends State<MobileEducation> {
                   flex: 2,
                 ),
                 CircleAvatar(
-                  backgroundImage: AssetImage('tafs2.jpg'),
-                  radius: 35.0,
+                  backgroundImage: AssetImage('tafs.jpg'),
+                  radius: 40.0,
                 ),
                 Spacer(
                   flex: 2,
