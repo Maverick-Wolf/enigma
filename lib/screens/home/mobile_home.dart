@@ -78,14 +78,14 @@ class MobileHome extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 15.0,
+                  height: 30.0,
                 ),
-                CircleAvatar(
-                  backgroundImage: AssetImage('groot.png'),
-                  radius: 90.0,
+                Image(
+                  image: AssetImage('assets/fullstack.png'),
+                  width: MediaQuery.of(context).size.width * 0.5,
                 ),
                 SizedBox(
-                  height: 10.0,
+                  height: 30.0,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

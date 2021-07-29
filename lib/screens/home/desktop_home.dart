@@ -160,12 +160,12 @@ class DesktopHome extends StatelessWidget {
               flex: 3,
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(5.0, 5.0, 15.0, 30.0),
-              child: CircleAvatar(
-                backgroundImage: AssetImage('groot.png'),
-                radius: 170.0,
-              ),
-            ),
+                padding: EdgeInsets.fromLTRB(5.0, 5.0, 15.0, 30.0),
+                child: Image(
+                  image: AssetImage('assets/fullstack.png'),
+                  width: MediaQuery.of(context).size.width * 0.39,
+                  // height: MediaQuery.of(context).size.height,
+                )),
             Spacer(
               flex: 1,
             ),
