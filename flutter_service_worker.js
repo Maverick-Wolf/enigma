@@ -3,20 +3,19 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "fc895e46e32753ea68e3a5758442011a",
+  "assets/AssetManifest.json": "0064c80f0b35dd2c6b7f240b146a8bd0",
 "assets/assets/college.png": "580eca55ed7bd2c1afc01a779d7465d1",
 "assets/assets/drawer.gif": "c77907dfb95a985fb94b548fab9892fd",
 "assets/assets/drawer2.jpg": "6b48164975c8f65a4280165a51d6a55f",
 "assets/assets/fullstack.png": "5e23afc9e2289bc1ade1bd49b3c7d703",
-"assets/assets/groot.png": "d6b765f5d3d9725ee531fa91b415acb6",
+"assets/assets/mainschool.png": "1bbbb2e1cc23462c82bd87d53366fb66",
 "assets/assets/manontable.png": "2448466059d0484cb7a6157b7e4cc29a",
 "assets/assets/mprogram.png": "747c5a2eaa15724b6f6e9af61d63765f",
 "assets/assets/program.png": "766f2286f0de86cd771e6cc29b5135d3",
 "assets/assets/school.png": "fe594a7b4af6e210c7f5c0d1c46e2b5d",
-"assets/assets/school4.png": "b1ad15df3728a0af4b5280b689995753",
 "assets/assets/skill.png": "f2508f9ebe035277c5168104b0071780",
 "assets/assets/tafs.jpg": "d5a2c5a652a9cbe92c6f1ad40175c27c",
-"assets/assets/tafs2.jpg": "09beb80deff223c6b921dbdd7e4313c5",
+"assets/assets/tafs.png": "6cb1bb7ffec5d5c952869a1524ba7f00",
 "assets/FontManifest.json": "9a42a3446b5304164fa3247186550910",
 "assets/fonts/Fuggles-Regular.ttf": "c9d1d7f2e7a0c956c62d16ce9518ef57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
@@ -28,9 +27,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "0d6ee9ef517c068a508ee070c6611ea4",
-"/": "0d6ee9ef517c068a508ee070c6611ea4",
-"main.dart.js": "a31b1cc7faee37ad746af3c059d31833",
+"index.html": "9324f726a1d5389cba3936bc88bebb2e",
+"/": "9324f726a1d5389cba3936bc88bebb2e",
+"main.dart.js": "c6c60b1bc168e59988b544b05ca8ac2b",
 "manifest.json": "33318b14f7e755e00d2716bcea2d278c",
 "version.json": "9e34cee1dbaf1e2b33a01230c5abe6c0"
 };
