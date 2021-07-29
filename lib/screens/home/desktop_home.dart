@@ -163,7 +163,7 @@ class DesktopHome extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(5.0, 5.0, 15.0, 30.0),
                 child: Image(
                   image: AssetImage('assets/fullstack.png'),
-                  width: MediaQuery.of(context).size.width * 0.39,
+                  width: MediaQuery.of(context).size.width * 0.34,
                   // height: MediaQuery.of(context).size.height,
                 )),
             Spacer(
