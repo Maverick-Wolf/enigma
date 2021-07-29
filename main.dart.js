@@ -27150,7 +27150,7 @@ a=a2.v(e).f
 s=a2.v(e).f
 r=K.b1(20)
 c=F.hD(C.d,1.2)
-s=M.br(m,T.bd(H.b([new R.aH(2,m),K.pA(new L.cF("school.png"),35),new R.aH(2,m),L.a_(j,A.L(m,m,C.d,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),new R.aH(1,m),T.cG(L.a_("Higher Secondary Education (2018-2020).",A.L(m,m,C.p,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),m,m),new R.aH(3,m)],a0),C.m,C.a4),C.o,m,m,new S.aL(C.k,m,c,r,m,m,C.n),m,a.a.b*0.33,m,m,m,m,m,s.a.a*0.24)
+s=M.br(m,T.bd(H.b([new R.aH(2,m),K.pA(new L.cF("school4.png"),35),new R.aH(2,m),L.a_(j,A.L(m,m,C.d,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),new R.aH(1,m),T.cG(L.a_("Higher Secondary Education (2018-2020).",A.L(m,m,C.p,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),m,m),new R.aH(3,m)],a0),C.m,C.a4),C.o,m,m,new S.aL(C.k,m,c,r,m,m,C.n),m,a.a.b*0.33,m,m,m,m,m,s.a.a*0.24)
 a=a2.v(e).f
 r=a2.v(e).f
 c=K.b1(20)
@@ -27162,7 +27162,7 @@ c=a2.v(e).f
 q=a2.v(e).f
 p=K.b1(20)
 s=F.hD(C.d,1.2)
-q=M.br(m,T.bd(H.b([new R.aH(2,m),K.pA(new L.cF("tafs.jpg"),35),new R.aH(2,m),L.a_(j,A.L(m,m,C.d,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),new R.aH(1,m),T.cG(L.a_("Secondary School Education (2013-2018).",A.L(m,m,C.p,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),m,m),new R.aH(3,m)],a0),C.m,C.a4),C.o,m,m,new S.aL(C.k,m,s,p,m,m,C.n),m,c.a.b*0.33,m,m,m,m,m,q.a.a*0.24)
+q=M.br(m,T.bd(H.b([new R.aH(2,m),K.pA(new L.cF("tafs2.jpg"),35),new R.aH(2,m),L.a_(j,A.L(m,m,C.d,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),new R.aH(1,m),T.cG(L.a_("Secondary School Education (2013-2018).",A.L(m,m,C.p,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m),m,m),m,m),new R.aH(3,m)],a0),C.m,C.a4),C.o,m,m,new S.aL(C.k,m,s,p,m,m,C.n),m,c.a.b*0.33,m,m,m,m,m,q.a.a*0.24)
 c=a2.v(e).f
 p=a2.v(e).f
 s=K.b1(20)
@@ -27198,12 +27198,12 @@ m=b.v(n).f
 k=b.v(n).f
 j=K.b1(20)
 s=F.hD(C.d,1.2)
-k=R.kw(!1,!0,M.br(p,T.bd(H.b([new R.aH(2,p),K.pA(new L.cF("school.png"),35),new R.aH(2,p),L.a_(o,A.L(p,p,C.d,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),new R.aH(1,p),T.cG(L.a_("Higher Secondary Education (2018-2020).",A.L(p,p,C.p,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),p,p),new R.aH(3,p)],i),C.m,C.a4),C.o,p,p,new S.aL(C.k,p,s,j,p,p,C.n),p,m.a.b*0.33,p,p,p,p,p,k.a.a*0.24),p,!0,p,p,p,p,C.b_,p,p,p,p,new X.ZH(),p)
+k=R.kw(!1,!0,M.br(p,T.bd(H.b([new R.aH(2,p),K.pA(new L.cF("school4.png"),35),new R.aH(2,p),L.a_(o,A.L(p,p,C.d,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),new R.aH(1,p),T.cG(L.a_("Higher Secondary Education (2018-2020).",A.L(p,p,C.p,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),p,p),new R.aH(3,p)],i),C.m,C.a4),C.o,p,p,new S.aL(C.k,p,s,j,p,p,C.n),p,m.a.b*0.33,p,p,p,p,p,k.a.a*0.24),p,!0,p,p,p,p,C.b_,p,p,p,p,new X.ZH(),p)
 m=b.v(n).f
 j=b.v(n).f
 s=K.b1(20)
 r=F.hD(C.d,1.2)
-q=H.b([new T.cx(C.ax,l,p),new T.cx(C.ax,k,p),new T.cx(C.ax,R.kw(!1,!0,M.br(p,T.bd(H.b([new R.aH(2,p),K.pA(new L.cF("tafs.jpg"),35),new R.aH(2,p),L.a_(o,A.L(p,p,C.d,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),new R.aH(1,p),T.cG(L.a_("Secondary School Education (2013-2018).",A.L(p,p,C.p,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),p,p),new R.aH(3,p)],i),C.m,C.a4),C.o,p,p,new S.aL(C.k,p,r,s,p,p,C.n),p,m.a.b*0.33,p,p,p,p,p,j.a.a*0.24),p,!0,p,p,p,p,C.b_,p,p,p,p,new X.ZI(),p),p)],i)
+q=H.b([new T.cx(C.ax,l,p),new T.cx(C.ax,k,p),new T.cx(C.ax,R.kw(!1,!0,M.br(p,T.bd(H.b([new R.aH(2,p),K.pA(new L.cF("tafs2.jpg"),35),new R.aH(2,p),L.a_(o,A.L(p,p,C.d,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),new R.aH(1,p),T.cG(L.a_("Secondary School Education (2013-2018).",A.L(p,p,C.p,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),p,p),new R.aH(3,p)],i),C.m,C.a4),C.o,p,p,new S.aL(C.k,p,r,s,p,p,C.n),p,m.a.b*0.33,p,p,p,p,p,j.a.a*0.24),p,!0,p,p,p,p,C.b_,p,p,p,p,new X.ZI(),p),p)],i)
 j=C.u.h(0,900)
 m=T.cG(L.a_("Education",A.L(p,p,C.d,p,p,p,p,p,p,p,p,33,p,p,p,p,!0,p,p,p,p,p,p,p),p,p),p,p)
 s=b.v(n).f
@@ -27240,7 +27240,7 @@ r=A.L(o,o,C.d,o,o,o,o,o,o,o,o,22,o,o,o,o,!0,o,o,o,o,o,o,o)
 r=M.lq("Discord Bot Development",P.az(0,100),r)
 q=A.L(o,o,C.d,o,o,o,o,o,o,o,o,22,o,o,o,o,!0,o,o,o,o,o,o,o)
 p=t.Y
-return M.eJ(o,C.k,Q.cn(!0,T.cT(H.b([new R.aH(2,o),T.bd(M.p6(new M.M5(),H.b([m,l,k,j,i,T.cT(H.b([h,M.br(o,D.a6D(H.b([g,s,r,M.lq("Python Programming",P.az(0,100),q)],t.uZ),!0),C.o,o,o,o,o,o,o,o,o,o,o,300)],p),C.m,C.D,C.Y),T.as(o,15,o),T.cT(H.b([B.ch(o,Z.bE(C.cN,C.d,40),new M.M6(),o),T.as(o,o,30),B.ch(o,Z.bE(C.cL,C.d,40),new M.M7(),o),T.as(o,o,30),B.ch(o,Z.bE(C.cK,C.d,40),new M.M8(),o),T.as(o,o,30),B.ch(o,Z.bE(C.cM,C.d,40),new M.M9(),o),T.as(o,o,30),B.ch(o,Z.bE(C.bD,C.d,40),new M.Ma(),o)],p),C.m,C.a4,C.Y)],p),n),C.c0,C.D),new R.aH(3,o),new T.cx(new V.b_(5,5,15,30),U.ku(o,new L.cF("assets/fullstack.png"),b.v(t.w).f.a.a*0.39),o),new R.aH(1,o)],p),C.m,C.a4,C.Y),C.E,!0),o)}}
+return M.eJ(o,C.k,Q.cn(!0,T.cT(H.b([new R.aH(2,o),T.bd(M.p6(new M.M5(),H.b([m,l,k,j,i,T.cT(H.b([h,M.br(o,D.a6D(H.b([g,s,r,M.lq("Python Programming",P.az(0,100),q)],t.uZ),!0),C.o,o,o,o,o,o,o,o,o,o,o,300)],p),C.m,C.D,C.Y),T.as(o,15,o),T.cT(H.b([B.ch(o,Z.bE(C.cN,C.d,40),new M.M6(),o),T.as(o,o,30),B.ch(o,Z.bE(C.cL,C.d,40),new M.M7(),o),T.as(o,o,30),B.ch(o,Z.bE(C.cK,C.d,40),new M.M8(),o),T.as(o,o,30),B.ch(o,Z.bE(C.cM,C.d,40),new M.M9(),o),T.as(o,o,30),B.ch(o,Z.bE(C.bD,C.d,40),new M.Ma(),o)],p),C.m,C.a4,C.Y)],p),n),C.c0,C.D),new R.aH(3,o),new T.cx(new V.b_(5,5,15,30),U.ku(o,new L.cF("assets/fullstack.png"),b.v(t.w).f.a.a*0.34),o),new R.aH(1,o)],p),C.m,C.a4,C.Y),C.E,!0),o)}}
 M.M5.prototype={
 $1:function(a){return V.ts(V.qa(a))},
 $S:25}
