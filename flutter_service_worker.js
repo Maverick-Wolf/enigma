@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "21044da45d99d8114bbf8fbe42cd7a9f",
+  "assets/AssetManifest.json": "e3b79f89245ff7744ba467ce3eabeaec",
 "assets/assets/college.png": "580eca55ed7bd2c1afc01a779d7465d1",
 "assets/assets/datascience.png": "b842a79de6a81dc5d4ca7d6fa2b21621",
 "assets/assets/drawer.gif": "c77907dfb95a985fb94b548fab9892fd",
@@ -13,9 +13,9 @@ const RESOURCES = {
 "assets/assets/manmail.png": "ab90aabba72c14aac335931b7f6a74ee",
 "assets/assets/manontable.png": "2448466059d0484cb7a6157b7e4cc29a",
 "assets/assets/program.png": "766f2286f0de86cd771e6cc29b5135d3",
-"assets/assets/school.png": "fe594a7b4af6e210c7f5c0d1c46e2b5d",
+"assets/assets/school2.jpg": "c3bf18c876c551f8da6806a3d0265a72",
+"assets/assets/school7.jpg": "b30e169560988524b57f1ccbef121e7c",
 "assets/assets/skill.png": "f2508f9ebe035277c5168104b0071780",
-"assets/assets/tafs.jpg": "d5a2c5a652a9cbe92c6f1ad40175c27c",
 "assets/assets/tafs.png": "6cb1bb7ffec5d5c952869a1524ba7f00",
 "assets/FontManifest.json": "9a42a3446b5304164fa3247186550910",
 "assets/fonts/Fuggles-Regular.ttf": "c9d1d7f2e7a0c956c62d16ce9518ef57",
@@ -28,9 +28,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "4144cfb2345ae4e58ce0fd578bcb0991",
-"/": "4144cfb2345ae4e58ce0fd578bcb0991",
-"main.dart.js": "6bbc94b84ec887b4b69cef51017948bf",
+"index.html": "dda90529207739b2036b6d2bc68db061",
+"/": "dda90529207739b2036b6d2bc68db061",
+"main.dart.js": "0a0585d8fc76659952dcd25db2df1956",
 "manifest.json": "33318b14f7e755e00d2716bcea2d278c",
 "version.json": "9e34cee1dbaf1e2b33a01230c5abe6c0"
 };
