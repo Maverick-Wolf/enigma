@@ -311,9 +311,9 @@ class DesktopEducation extends StatelessWidget {
                   flex: 3,
                 ),
                 Image(
-                  image: AssetImage('assets/skill.png'),
-                  height: MediaQuery.of(context).size.height * 0.5,
-                  width: MediaQuery.of(context).size.width * 0.3,
+                  image: AssetImage('assets/datascience.png'),
+                  height: MediaQuery.of(context).size.height * 0.6,
+                  width: MediaQuery.of(context).size.width * 0.35,
                 ),
                 Spacer(),
               ],

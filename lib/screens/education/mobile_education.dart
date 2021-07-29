@@ -207,9 +207,9 @@ class _MobileEducationState extends State<MobileEducation> {
               ),
             ),
             Image(
-              image: AssetImage('assets/skill.png'),
+              image: AssetImage('assets/datascience.png'),
               height: MediaQuery.of(context).size.height * 0.5,
-              width: MediaQuery.of(context).size.width * 0.6,
+              width: MediaQuery.of(context).size.width * 0.55,
             ),
           ],
         ),

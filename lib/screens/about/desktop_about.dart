@@ -12,7 +12,7 @@ class DesktopAbout extends StatelessWidget {
             Spacer(),
             Spacer(),
             Container(
-              width: MediaQuery.of(context).size.width * 0.6,
+              width: MediaQuery.of(context).size.width * 0.5,
               child: Column(
                 // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,9 +118,9 @@ class DesktopAbout extends StatelessWidget {
               flex: 3,
             ),
             Image(
-              image: AssetImage('assets/manontable.png'),
-              height: MediaQuery.of(context).size.height * 0.5,
-              width: MediaQuery.of(context).size.width * 0.33,
+              image: AssetImage('assets/manmail.png'),
+              height: MediaQuery.of(context).size.height * 0.6,
+              width: MediaQuery.of(context).size.width * 0.4,
             ),
             Spacer(),
           ],

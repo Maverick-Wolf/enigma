@@ -28,8 +28,8 @@ class DesktopSkills extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Image(
-                  image: AssetImage('assets/program.png'),
-                  height: MediaQuery.of(context).size.height * 0.7,
+                  image: AssetImage('assets/manontable.png'),
+                  height: MediaQuery.of(context).size.height * 0.6,
                   width: MediaQuery.of(context).size.width * 0.4,
                 ),
                 Column(

@@ -150,8 +150,11 @@ class _MobileSkillsState extends State<MobileSkills> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            Spacer(
+              flex: 1,
+            ),
             Center(
               child: Text(
                 "What I Do",
@@ -163,6 +166,9 @@ class _MobileSkillsState extends State<MobileSkills> {
                 "I may not be perfect, but I'm surely of some help :)",
                 style: TextStyle(color: Colors.white),
               ),
+            ),
+            Spacer(
+              flex: 2,
             ),
             Center(
               child: Container(
@@ -180,10 +186,14 @@ class _MobileSkillsState extends State<MobileSkills> {
                 ),
               ),
             ),
+            Spacer(),
             Image(
-              image: AssetImage('assets/mprogram.png'),
+              image: AssetImage('assets/manontable.png'),
               height: MediaQuery.of(context).size.height * 0.4,
-              width: MediaQuery.of(context).size.width * 0.6,
+              width: MediaQuery.of(context).size.width * 0.55,
+            ),
+            Spacer(
+              flex: 2,
             ),
           ],
         ),

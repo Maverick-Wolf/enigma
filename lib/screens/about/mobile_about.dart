@@ -95,9 +95,9 @@ class MobileAbout extends StatelessWidget {
                   ),
                 ),
                 Image(
-                  image: AssetImage('assets/manontable.png'),
-                  height: MediaQuery.of(context).size.height * 0.37,
-                  width: MediaQuery.of(context).size.width * 0.37,
+                  image: AssetImage('assets/manmail.png'),
+                  height: MediaQuery.of(context).size.height * 0.4,
+                  width: MediaQuery.of(context).size.width * 0.55,
                 ),
               ],
             ),
