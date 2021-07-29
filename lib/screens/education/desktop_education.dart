@@ -52,7 +52,8 @@ class DesktopEducation extends StatelessWidget {
                                 CircleAvatar(
                                   backgroundImage:
                                       AssetImage('assets/college.png'),
-                                  radius: 40.0,
+                                  backgroundColor: Colors.transparent,
+                                  radius: 35.0,
                                 ),
                                 Spacer(
                                   flex: 2,
@@ -143,8 +144,10 @@ class DesktopEducation extends StatelessWidget {
                                     flex: 2,
                                   ),
                                   CircleAvatar(
-                                    backgroundImage: AssetImage('school.png'),
-                                    radius: 40.0,
+                                    backgroundImage:
+                                        AssetImage('mainschool.png'),
+                                    backgroundColor: Colors.transparent,
+                                    radius: 35.0,
                                   ),
                                   Spacer(
                                     flex: 2,
@@ -234,8 +237,9 @@ class DesktopEducation extends StatelessWidget {
                                     flex: 2,
                                   ),
                                   CircleAvatar(
-                                    backgroundImage: AssetImage('tafs.jpg'),
-                                    radius: 40.0,
+                                    backgroundImage: AssetImage('tafs.png'),
+                                    backgroundColor: Colors.transparent,
+                                    radius: 35.0,
                                   ),
                                   Spacer(
                                     flex: 2,
