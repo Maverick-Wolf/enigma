@@ -35,7 +35,7 @@ class _MobileEducationState extends State<MobileEducation> {
   Widget build(BuildContext context) {
     List<Widget> _list = [
       Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        padding: const EdgeInsets.only(left: 5.0, right: 5.0),
         child: InkWell(
           mouseCursor: SystemMouseCursors.click,
           onTap: () {
@@ -62,14 +62,20 @@ class _MobileEducationState extends State<MobileEducation> {
                 Spacer(
                   flex: 2,
                 ),
-                Text(
-                  "Birla Institute of Technology and Science, Pilani",
-                  style: TextStyle(color: Colors.white),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Text(
+                    "Birla Institute of Technology and Science, Pilani",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
                 Spacer(),
-                Text(
-                  "Engineering in Electronics (2020-2024). ",
-                  style: TextStyle(color: Colors.white70),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Text(
+                    "Engineering in Electronics (2020-2024). ",
+                    style: TextStyle(color: Colors.white70),
+                  ),
                 ),
                 Spacer(
                   flex: 3,
@@ -80,7 +86,7 @@ class _MobileEducationState extends State<MobileEducation> {
         ),
       ),
       Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        padding: const EdgeInsets.only(left: 5.0, right: 5.0),
         child: InkWell(
           mouseCursor: SystemMouseCursors.click,
           onTap: () {
@@ -100,24 +106,30 @@ class _MobileEducationState extends State<MobileEducation> {
                   flex: 2,
                 ),
                 Image(
-                  image: AssetImage('assets/circleSchool1.png'),
+                  image: AssetImage('assets/circleTafs1.png'),
                   width: 70.0,
                   height: 70.0,
                 ),
                 Spacer(
                   flex: 2,
                 ),
-                Text(
-                  "The Air Force School, Subroto Park",
-                  style: TextStyle(
-                    color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Text(
+                    "The Air Force School, Subroto Park",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 Spacer(),
                 Center(
-                  child: Text(
-                    "Higher Secondary Education (2018-2020).",
-                    style: TextStyle(color: Colors.white70),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: Text(
+                      "Higher Secondary Education (2018-2020).",
+                      style: TextStyle(color: Colors.white70),
+                    ),
                   ),
                 ),
                 Spacer(
@@ -129,7 +141,7 @@ class _MobileEducationState extends State<MobileEducation> {
         ),
       ),
       Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        padding: const EdgeInsets.only(left: 5.0, right: 5.0),
         child: InkWell(
           mouseCursor: SystemMouseCursors.click,
           onTap: () {
@@ -149,24 +161,30 @@ class _MobileEducationState extends State<MobileEducation> {
                   flex: 2,
                 ),
                 Image(
-                  image: AssetImage('assets/circleSchool2.png'),
-                  width: 80.0,
-                  height: 80.0,
+                  image: AssetImage('assets/circleTafs2.png'),
+                  width: 70.0,
+                  height: 70.0,
                 ),
                 Spacer(
                   flex: 2,
                 ),
-                Text(
-                  "The Air Force School, Subroto Park",
-                  style: TextStyle(
-                    color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Text(
+                    "The Air Force School, Subroto Park",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 Spacer(),
                 Center(
-                  child: Text(
-                    "Secondary School Education (2013-2018).",
-                    style: TextStyle(color: Colors.white70),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: Text(
+                      "Secondary School Education (2013-2018).",
+                      style: TextStyle(color: Colors.white70),
+                    ),
                   ),
                 ),
                 Spacer(

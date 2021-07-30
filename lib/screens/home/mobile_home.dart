@@ -4,7 +4,26 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:js' as js;
 
-class MobileHome extends StatelessWidget {
+class MobileHome extends StatefulWidget {
+  @override
+  _MobileHomeState createState() => _MobileHomeState();
+}
+
+class _MobileHomeState extends State<MobileHome> {
+  Image myImage;
+
+  @override
+  void initState() {
+    super.initState();
+    myImage = Image.asset('assets/drawer.gif');
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    precacheImage(myImage.image, context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

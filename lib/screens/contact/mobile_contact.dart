@@ -36,10 +36,10 @@ class _MobileContactState extends State<MobileContact> {
   Widget build(BuildContext context) {
     List<Widget> _list = [
       Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        padding: const EdgeInsets.only(left: 5.0, right: 5.0),
         child: HoverContainer(
-          height: MediaQuery.of(context).size.height * 0.27,
-          width: MediaQuery.of(context).size.width * 0.53,
+          height: MediaQuery.of(context).size.height * 0.22,
+          width: MediaQuery.of(context).size.width * 0.47,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.0),
             color: Colors.grey[850],
@@ -68,10 +68,10 @@ class _MobileContactState extends State<MobileContact> {
         ),
       ),
       Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        padding: const EdgeInsets.only(left: 5.0, right: 5.0),
         child: HoverContainer(
-          height: MediaQuery.of(context).size.height * 0.27,
-          width: MediaQuery.of(context).size.width * 0.53,
+          height: MediaQuery.of(context).size.height * 0.22,
+          width: MediaQuery.of(context).size.width * 0.47,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.0),
             color: Colors.grey[850],
@@ -100,10 +100,10 @@ class _MobileContactState extends State<MobileContact> {
         ),
       ),
       Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        padding: const EdgeInsets.only(left: 5.0, right: 5.0),
         child: HoverContainer(
-          height: MediaQuery.of(context).size.height * 0.27,
-          width: MediaQuery.of(context).size.width * 0.53,
+          height: MediaQuery.of(context).size.height * 0.22,
+          width: MediaQuery.of(context).size.width * 0.47,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.0),
             color: Colors.grey[850],
@@ -132,10 +132,10 @@ class _MobileContactState extends State<MobileContact> {
         ),
       ),
       Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        padding: const EdgeInsets.only(left: 5.0, right: 5.0),
         child: HoverContainer(
-          height: MediaQuery.of(context).size.height * 0.27,
-          width: MediaQuery.of(context).size.width * 0.53,
+          height: MediaQuery.of(context).size.height * 0.22,
+          width: MediaQuery.of(context).size.width * 0.47,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.0),
             color: Colors.grey[850],
@@ -190,8 +190,8 @@ class _MobileContactState extends State<MobileContact> {
             ),
             Center(
               child: Container(
-                height: MediaQuery.of(context).size.height * 0.27,
-                width: MediaQuery.of(context).size.width * 0.53,
+                height: MediaQuery.of(context).size.height * 0.22,
+                width: MediaQuery.of(context).size.width * 0.47,
                 child: PageView(
                   controller: _controller,
                   children: _list,

@@ -65,9 +65,12 @@ class DesktopSkills extends StatelessWidget {
                               SizedBox(
                                 height: 10.0,
                               ),
-                              Text(
-                                "Flutter App Development",
-                                style: TextStyle(color: Colors.white),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                child: Text(
+                                  "Flutter App Development",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                               // AnimatedTextKit(
                               //   animatedTexts: [
@@ -111,9 +114,12 @@ class DesktopSkills extends StatelessWidget {
                               SizedBox(
                                 height: 10.0,
                               ),
-                              Text(
-                                "Flutter Web Development",
-                                style: TextStyle(color: Colors.white),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                child: Text(
+                                  "Flutter Web Development",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                               // AnimatedTextKit(
                               //   animatedTexts: [
@@ -162,9 +168,12 @@ class DesktopSkills extends StatelessWidget {
                               SizedBox(
                                 height: 10.0,
                               ),
-                              Text(
-                                "Discord Bot Development",
-                                style: TextStyle(color: Colors.white),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                child: Text(
+                                  "Discord Bot Development",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                               // AnimatedTextKit(
                               //   animatedTexts: [
@@ -208,9 +217,12 @@ class DesktopSkills extends StatelessWidget {
                               SizedBox(
                                 height: 10.0,
                               ),
-                              Text(
-                                "Open Source - Githib",
-                                style: TextStyle(color: Colors.white),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                child: Text(
+                                  "Open Source - Githib",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                               // AnimatedTextKit(
                               //   animatedTexts: [
