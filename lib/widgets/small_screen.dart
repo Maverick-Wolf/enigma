@@ -122,6 +122,20 @@ class _SmallScreenState extends State<SmallScreen> {
                 Navigator.pop(context);
               },
             ),
+            ListTile(
+              title: Text(
+                "LOGIN",
+                style: TextStyle(color: Colors.white),
+              ),
+              leading: Icon(
+                Icons.login,
+                color: Colors.redAccent,
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/moblogin');
+              },
+            ),
           ],
         ),
       ),

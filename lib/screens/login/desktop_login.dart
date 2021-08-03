@@ -36,7 +36,7 @@ class DesktopLogin extends StatelessWidget {
               SizedBox(
                 height: 3.0,
               ),
-              Text("Just a way for me to login and add new blogs :)"),
+              Text("Just a way for me to login and add new projects :)"),
               SizedBox(
                 height: 35.0,
               ),

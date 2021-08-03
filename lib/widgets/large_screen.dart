@@ -26,7 +26,7 @@ class LargeScreen extends StatelessWidget {
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: AnimationConfiguration.toStaggeredList(
-                duration: Duration(milliseconds: 3000),
+                duration: Duration(milliseconds: 2800),
                 childAnimationBuilder: (widget) => SlideAnimation(
                   child: FadeInAnimation(
                     child: widget,
@@ -58,7 +58,7 @@ class LargeScreen extends StatelessWidget {
                         ]),
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.13,
+                    width: MediaQuery.of(context).size.width * 0.11,
                   ),
                   HoverButton(
                     onpressed: () {
