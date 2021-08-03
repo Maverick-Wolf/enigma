@@ -137,6 +137,19 @@ class LargeScreen extends StatelessWidget {
                       style: TextStyle(fontSize: 15.0, color: Colors.white),
                     ),
                   ),
+                  HoverButton(
+                    onpressed: () {
+                      Navigator.pushNamed(context, '/desklogin');
+                    },
+                    hoverColor: Colors.red[700],
+                    elevation: 0.0,
+                    hoverElevation: 0.0,
+                    height: 45.0,
+                    child: Text(
+                      "LOGIN",
+                      style: TextStyle(fontSize: 15.0, color: Colors.white),
+                    ),
+                  ),
                 ],
               ))),
       body: RawScrollbar(

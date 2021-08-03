@@ -1,4 +1,6 @@
 import 'package:enigma/layout.dart';
+import 'package:enigma/screens/login/desktop_login.dart';
+import 'package:enigma/screens/login/mobile_login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(canvasColor: Color(0xFF233B4F)),
-      home: SiteLayout(),
+      routes: {
+        '/': (context) => SiteLayout(),
+        '/desklogin': (context) => DesktopLogin(),
+        '/moblogin': (context) => MobileLogin(),
+      },
     );
   }
 }
