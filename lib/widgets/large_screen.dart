@@ -2,6 +2,7 @@ import 'package:enigma/screens/about/desktop_about.dart';
 import 'package:enigma/screens/contact/desktop_contact.dart';
 import 'package:enigma/screens/education/desktop_education.dart';
 import 'package:enigma/screens/home/desktop_home.dart';
+import 'package:enigma/screens/projects/desktop_projects.dart';
 import 'package:enigma/screens/skills/desktop_skills.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -16,6 +17,7 @@ class LargeScreen extends StatelessWidget {
       SafeArea(child: DesktopAbout()),
       SafeArea(child: DesktopSkills()),
       SafeArea(child: DesktopEducation()),
+      SafeArea(child: DesktopProjects()),
       SafeArea(child: DesktopContact()),
     ];
     PageController controller = PageController(viewportFraction: 1.1);
@@ -58,7 +60,7 @@ class LargeScreen extends StatelessWidget {
                         ]),
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.11,
+                    width: MediaQuery.of(context).size.width * 0.061,
                   ),
                   HoverButton(
                     onpressed: () {
@@ -133,20 +135,23 @@ class LargeScreen extends StatelessWidget {
                     minWidth: 100.0,
                     height: 45.0,
                     child: Text(
-                      "CONTACT",
+                      "PROJECTS",
                       style: TextStyle(fontSize: 15.0, color: Colors.white),
                     ),
                   ),
                   HoverButton(
                     onpressed: () {
-                      Navigator.pushNamed(context, '/desklogin');
+                      controller.animateToPage(5,
+                          duration: Duration(milliseconds: 1200),
+                          curve: Curves.easeInOutSine);
                     },
                     hoverColor: Colors.red[700],
                     elevation: 0.0,
                     hoverElevation: 0.0,
+                    minWidth: 100.0,
                     height: 45.0,
                     child: Text(
-                      "LOGIN",
+                      "CONTACT",
                       style: TextStyle(fontSize: 15.0, color: Colors.white),
                     ),
                   ),

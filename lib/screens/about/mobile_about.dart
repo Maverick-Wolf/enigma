@@ -29,7 +29,7 @@ class MobileAbout extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Hi There! I'm Rachit Chaudhary,\nA Flutter developer, Python/C++ programmer, a Discord bot owner and an open source contributor based in India.",
+                  "Hi There! I'm Rachit Chaudhary,\nA Flutter developer, Python/C++ programmer, a Discord bot developer and an open source contributor based in India.",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
@@ -37,14 +37,14 @@ class MobileAbout extends StatelessWidget {
                       letterSpacing: 1.1),
                 ),
                 Text(
-                  "I have been developing Android Apps for just over 6 months now and all of these apps have majorly been in Flutter. This portfolio website is my first time playing around with flutter web.",
+                  "I have been developing Android/IOS Apps for just over 6 months now and all of these apps have majorly been in Flutter. This portfolio website is my first time playing around with flutter web.",
                   style: TextStyle(
                       color: Colors.white70,
                       fontSize: 13.5,
                       letterSpacing: 1.1),
                 ),
                 Text(
-                  "I am also the Creator and Co-Founder of a Discord bot called Emote Handler which currenlty is in over 1000 servers and has a userbase of over 400k+ users.",
+                  "I am also the Creator and Co-Founder of a Discord bot called Emote Handler which currenlty is in over 1000 servers and has a userbase of over 600k+ users.",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
@@ -74,19 +74,7 @@ class MobileAbout extends StatelessWidget {
                               fontSize: 13.5,
                               letterSpacing: 1.1)),
                       TextSpan(
-                          text: "  Engineering in Electronics",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: 1.1)),
-                      TextSpan(
-                          text: " , and a active supporter of a",
-                          style: TextStyle(
-                              color: Colors.white70,
-                              fontSize: 13.5,
-                              letterSpacing: 1.1)),
-                      TextSpan(
-                          text: "  Discord bot YAGPDB.xyz",
+                          text: "  Engineering in Electronics.",
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.w500,
