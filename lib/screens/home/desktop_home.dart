@@ -4,7 +4,28 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:js' as js;
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
-class DesktopHome extends StatelessWidget {
+class DesktopHome extends StatefulWidget {
+  @override
+  _DesktopHomeState createState() => _DesktopHomeState();
+}
+
+class _DesktopHomeState extends State<DesktopHome> {
+  Image myImage, myImage2;
+
+  @override
+  void initState() {
+    super.initState();
+    myImage = Image.asset('assets/drawer.gif');
+    myImage2 = Image.asset('assets/login.gif');
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    precacheImage(myImage.image, context);
+    precacheImage(myImage2.image, context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

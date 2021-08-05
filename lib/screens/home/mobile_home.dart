@@ -10,18 +10,20 @@ class MobileHome extends StatefulWidget {
 }
 
 class _MobileHomeState extends State<MobileHome> {
-  Image myImage;
+  Image myImage, myImage2;
 
   @override
   void initState() {
     super.initState();
     myImage = Image.asset('assets/drawer.gif');
+    myImage2 = Image.asset('assets/login.gif');
   }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     precacheImage(myImage.image, context);
+    precacheImage(myImage2.image, context);
   }
 
   @override
