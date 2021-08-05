@@ -2,6 +2,7 @@ import 'package:enigma/screens/about/mobile_about.dart';
 import 'package:enigma/screens/contact/mobile_contact.dart';
 import 'package:enigma/screens/education/mobile_education.dart';
 import 'package:enigma/screens/home/mobile_home.dart';
+import 'package:enigma/screens/projects/mobile_projects.dart';
 import 'package:enigma/screens/skills/mobile_skills.dart';
 import 'package:flutter/material.dart';
 
@@ -22,6 +23,7 @@ class _SmallScreenState extends State<SmallScreen> {
         child: MobileSkills(),
       ),
       SafeArea(child: MobileEducation()),
+      SafeArea(child: MobileProjects()),
       SafeArea(child: MobileContact()),
     ];
     PageController controller = PageController(viewportFraction: 1.1);
@@ -108,11 +110,11 @@ class _SmallScreenState extends State<SmallScreen> {
             ),
             ListTile(
               title: Text(
-                "CONTACT",
+                "PORJECTS",
                 style: TextStyle(color: Colors.white),
               ),
               leading: Icon(
-                Icons.phone,
+                Icons.build_rounded,
                 color: Colors.redAccent,
               ),
               onTap: () {
@@ -124,16 +126,18 @@ class _SmallScreenState extends State<SmallScreen> {
             ),
             ListTile(
               title: Text(
-                "LOGIN",
+                "CONTACT",
                 style: TextStyle(color: Colors.white),
               ),
               leading: Icon(
-                Icons.login,
+                Icons.phone,
                 color: Colors.redAccent,
               ),
               onTap: () {
+                controller.animateToPage(5,
+                    duration: Duration(milliseconds: 1200),
+                    curve: Curves.easeInOutSine);
                 Navigator.pop(context);
-                Navigator.pushNamed(context, '/moblogin');
               },
             ),
           ],
