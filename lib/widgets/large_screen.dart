@@ -28,7 +28,7 @@ class LargeScreen extends StatelessWidget {
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: AnimationConfiguration.toStaggeredList(
-                duration: Duration(milliseconds: 2800),
+                duration: Duration(milliseconds: 2100),
                 childAnimationBuilder: (widget) => SlideAnimation(
                   child: FadeInAnimation(
                     child: widget,
