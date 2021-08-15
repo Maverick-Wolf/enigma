@@ -1,197 +1,18 @@
+import 'dart:convert';
+import 'dart:js' as js;
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class DesktopProjects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    List<Widget> _list = [
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 7.0),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.37,
-          width: MediaQuery.of(context).size.width * 0.25,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            color: Colors.grey[850],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Spacer(
-                flex: 5,
-              ),
-              Text(
-                "This is Project Number 1",
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-              Spacer(
-                flex: 4,
-              ),
-              Text(
-                "This is just an example will update it with real data soon",
-                style: TextStyle(color: Colors.white, fontSize: 10.0),
-              ),
-              Spacer(),
-            ],
-          ),
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 7.0),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.37,
-          width: MediaQuery.of(context).size.width * 0.25,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            color: Colors.grey[850],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Spacer(
-                flex: 5,
-              ),
-              Text(
-                "This is Project Number 2",
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-              Spacer(
-                flex: 4,
-              ),
-              Text(
-                "This is just an example will update it with real data soon",
-                style: TextStyle(color: Colors.white, fontSize: 10.0),
-              ),
-              Spacer(),
-            ],
-          ),
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 7.0),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.37,
-          width: MediaQuery.of(context).size.width * 0.25,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            color: Colors.grey[850],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Spacer(
-                flex: 5,
-              ),
-              Text(
-                "This is Project Number 3",
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-              Spacer(
-                flex: 4,
-              ),
-              Text(
-                "This is just an example will update it with real data soon",
-                style: TextStyle(color: Colors.white, fontSize: 10.0),
-              ),
-              Spacer(),
-            ],
-          ),
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 7.0),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.37,
-          width: MediaQuery.of(context).size.width * 0.25,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            color: Colors.grey[850],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Spacer(
-                flex: 5,
-              ),
-              Text(
-                "This is Project Number 4",
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-              Spacer(
-                flex: 4,
-              ),
-              Text(
-                "This is just an example will update it with real data soon",
-                style: TextStyle(color: Colors.white, fontSize: 10.0),
-              ),
-              Spacer(),
-            ],
-          ),
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 7.0),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.37,
-          width: MediaQuery.of(context).size.width * 0.25,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            color: Colors.grey[850],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Spacer(
-                flex: 5,
-              ),
-              Text(
-                "This is Project Number 5",
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-              Spacer(
-                flex: 4,
-              ),
-              Text(
-                "This is just an example will update it with real data soon",
-                style: TextStyle(color: Colors.white, fontSize: 10.0),
-              ),
-              Spacer(),
-            ],
-          ),
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 7.0),
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.37,
-          width: MediaQuery.of(context).size.width * 0.25,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            color: Colors.grey[850],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Spacer(
-                flex: 5,
-              ),
-              Text(
-                "This is Project Number 6",
-                style: TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-              Spacer(
-                flex: 4,
-              ),
-              Text(
-                "This is just an example will update it with real data soon",
-                style: TextStyle(color: Colors.white, fontSize: 10.0),
-              ),
-              Spacer(),
-            ],
-          ),
-        ),
-      ),
-    ];
+    getRepos() async {
+      Response response = await get(
+          Uri.parse('https://api.github.com/users/Maverick-Wolf/repos'));
+      return response.body;
+    }
+
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
@@ -203,11 +24,11 @@ class DesktopProjects extends StatelessWidget {
                 flex: 2,
               ),
               Text(
-                "Projects",
+                "All Projects,\nGithub Repositories",
                 style: TextStyle(color: Colors.white, fontSize: 42.0),
               ),
               Text(
-                "some of the projects i have worked on :)",
+                "Powered by GitHub Api",
                 style: TextStyle(color: Colors.white),
               ),
               Spacer(
@@ -217,21 +38,115 @@ class DesktopProjects extends StatelessWidget {
                 decoration:
                     BoxDecoration(borderRadius: BorderRadius.circular(10.0)),
                 padding: EdgeInsets.symmetric(horizontal: 40.0),
-                height: MediaQuery.of(context).size.height * 0.37,
-                width: MediaQuery.of(context).size.width * 0.7,
-                child: AnimationLimiter(
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: AnimationConfiguration.toStaggeredList(
-                      duration: Duration(milliseconds: 2200),
-                      childAnimationBuilder: (widget) => SlideAnimation(
-                        child: FadeInAnimation(
-                          child: widget,
+                height: MediaQuery.of(context).size.height * 0.31,
+                width: MediaQuery.of(context).size.width * 0.52,
+                child: FutureBuilder(
+                  future: getRepos(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      final List data = jsonDecode(snapshot.data);
+                      return AnimationLimiter(
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: data.length,
+                          itemBuilder: (context, index) {
+                            return AnimationConfiguration.staggeredList(
+                              position: index,
+                              duration: Duration(milliseconds: 1500),
+                              child: SlideAnimation(
+                                child: FadeInAnimation(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 7.0),
+                                    child: InkWell(
+                                      mouseCursor: SystemMouseCursors.click,
+                                      onTap: () {
+                                        js.context.callMethod('open',
+                                            ['${data[index]['html_url']}']);
+                                      },
+                                      child: Container(
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                0.37,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.25,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(15.0),
+                                          color: Colors.grey[850],
+                                        ),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              "Name",
+                                              style: TextStyle(
+                                                  color: Colors.redAccent,
+                                                  fontWeight: FontWeight.w500,
+                                                  letterSpacing: 1.2),
+                                            ),
+                                            Text(
+                                              "${data[index]['name']}",
+                                              style: TextStyle(
+                                                  fontSize: 17.3,
+                                                  color: Colors.white),
+                                            ),
+                                            SizedBox(
+                                              height: 7.0,
+                                            ),
+                                            Text(
+                                              "Description",
+                                              style: TextStyle(
+                                                  color: Colors.redAccent,
+                                                  fontWeight: FontWeight.w500,
+                                                  letterSpacing: 1.2),
+                                            ),
+                                            Padding(
+                                              padding:
+                                                  const EdgeInsets.symmetric(
+                                                      horizontal: 7.0),
+                                              child: Text(
+                                                "${data[index]['description']}",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              height: 7.0,
+                                            ),
+                                            Text(
+                                              "Langugae",
+                                              style: TextStyle(
+                                                  color: Colors.redAccent,
+                                                  fontWeight: FontWeight.w500,
+                                                  letterSpacing: 1.2),
+                                            ),
+                                            Text(
+                                              "${data[index]['language']}",
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 16.5),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
                         ),
-                      ),
-                      children: _list,
-                    ),
-                  ),
+                      );
+                    } else {
+                      return Container();
+                    }
+                  },
                 ),
               ),
               Spacer(

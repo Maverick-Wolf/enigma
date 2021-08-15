@@ -110,7 +110,7 @@ class _SmallScreenState extends State<SmallScreen> {
             ),
             ListTile(
               title: Text(
-                "PORJECTS",
+                "PROJECTS",
                 style: TextStyle(color: Colors.white),
               ),
               leading: Icon(

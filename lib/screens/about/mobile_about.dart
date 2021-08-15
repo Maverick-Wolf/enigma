@@ -44,7 +44,7 @@ class MobileAbout extends StatelessWidget {
                       letterSpacing: 1.1),
                 ),
                 Text(
-                  "I am also the Creator and Co-Founder of a Discord bot called Emote Handler which currenlty is in over 1000 servers and has a userbase of over 600k+ users.",
+                  "I am also the Creator and Co-Founder of a Discord bot called Emote Handler which currently is in over 1500 servers and has a userbase of over 700k+ users.",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
